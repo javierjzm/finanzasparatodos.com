@@ -52,6 +52,28 @@ Añade estos registros DNS en tu registrador:
 
 La propagación DNS puede tardar hasta 24 horas (normalmente menos de 1 hora).
 
+## 5.1 Forzar redirección 301 entre dominio raíz y www
+
+Para SEO, evita que el sitio sea accesible en dos versiones distintas (`www` y sin `www`).
+
+1. En Cloudflare, entra en **Rules** → **Redirect Rules**.
+2. Crea una regla para dejar solo **una** versión canónica (recomendado: sin `www`).
+3. Configura:
+   - **If incoming requests match**: `hostname equals www.finanzasguias.com`
+   - **Then**: `Static Redirect`
+   - **URL**: `https://finanzasguias.com/$1`
+   - **Status code**: `301`
+   - **Preserve query string**: `On`
+4. Guarda y publica la regla.
+
+Comprobación rápida:
+
+```bash
+curl -I https://www.finanzasguias.com
+```
+
+Debes ver `301 Moved Permanently` y cabecera `Location: https://finanzasguias.com/...`.
+
 ## 6. Verificar los headers de seguridad
 
 Una vez desplegado, verifica que los headers del archivo `_headers` se aplican correctamente:
