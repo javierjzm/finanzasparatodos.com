@@ -62,7 +62,7 @@
         },
         "author": {
           "type": "string",
-          "default": "Equipo editorial de Finanzas Para Todos"
+          "default": "Equipo editorial de Finanzas Guías"
         },
         "canonical": {
           "type": "string",

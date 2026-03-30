@@ -16,7 +16,7 @@ No necesitas tráfico mínimo, pero sí contenido de calidad suficiente para que
 ## 2. Solicitar AdSense
 
 1. Ve a [adsense.google.com](https://adsense.google.com) e inicia sesión con tu cuenta de Google.
-2. Haz clic en **Empezar** e introduce la URL de tu sitio (`https://finanzasparatodos.com`).
+2. Haz clic en **Empezar** e introduce la URL de tu sitio (`https://finanzasguias.com`).
 3. Google te proporcionará un fragmento de código de verificación. Pégalo en `src/layouts/Base.astro`, dentro del `<head>`, antes del cierre `</head>`:
 
 ```html

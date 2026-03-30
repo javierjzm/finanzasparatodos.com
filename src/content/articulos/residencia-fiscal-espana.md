@@ -5,7 +5,7 @@ category: "fiscalidad-internacional"
 keywords: ["residencia fiscal españa", "183 dias residencia fiscal", "doble imposicion españa", "tributacion no residente", "convenio doble imposicion"]
 datePublished: 2025-03-01
 dateModified: 2025-03-01
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["tramos-irpf-2025", "impuesto-plusvalias"]
 schema: "faq"

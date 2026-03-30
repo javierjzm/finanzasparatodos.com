@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /draft/
 
-Sitemap: https://finanzasparatodos.com/sitemap-index.xml
+Sitemap: https://finanzasguias.com/sitemap-index.xml

@@ -1,4 +1,4 @@
-# finanzasparatodos.com
+# finanzasguias.com
 
 Sitio web de divulgación fiscal y finanzas personales para particulares y autónomos en España. Contenido informacional optimizado para SEO y monetizado con Google AdSense.
 
@@ -14,8 +14,8 @@ Sitio web de divulgación fiscal y finanzas personales para particulares y autó
 ## Instalación local
 
 ```bash
-git clone https://github.com/tu-usuario/finanzasparatodos.com.git
-cd finanzasparatodos.com
+git clone https://github.com/tu-usuario/finanzasguias.com.git
+cd finanzasguias.com
 npm install
 npm run dev
 ```
@@ -61,7 +61,7 @@ Para cada zona, crea una unidad de anuncio en tu panel de AdSense y pega el cód
 
 ## Cómo cambiar el dominio placeholder
 
-El dominio `finanzasparatodos.com` está configurado en:
+El dominio `finanzasguias.com` está configurado en:
 
 - `astro.config.mjs` (propiedad `site`)
 - `src/layouts/Base.astro` (schemas JSON-LD, URLs)
@@ -72,12 +72,12 @@ Para cambiarlo, ejecuta un find & replace global:
 
 ```bash
 # Buscar todas las ocurrencias
-grep -r "finanzasparatodos.com" --include="*.astro" --include="*.mjs" --include="*.ts" --include="*.txt" --include="*.md"
+grep -r "finanzasguias.com" --include="*.astro" --include="*.mjs" --include="*.ts" --include="*.txt" --include="*.md"
 ```
 
 ## Variables de entorno
 
-No se requieren variables de entorno. Todos los IDs (GA4, AdSense) se configuran directamente en el código:
+No se requieren variables de entorno. Los IDs se configuran en el código y en Google Tag Manager:
 
-- **GA4 Measurement ID:** busca `G-XXXXXXXXXX` en `src/components/CookieBanner.astro` y reemplázalo por tu ID real.
-- **AdSense Publisher ID:** busca `ca-pub-XXXXXXXXXXXXXXXX` y reemplázalo por tu ID real.
+- **Google Tag Manager:** contenedor `GTM-WSLWLFNS` en `src/layouts/Base.astro`. Añade la etiqueta GA4 en GTM y enlaza el disparo al **Consent Mode** (o a tu lógica de consentimiento).
+- **AdSense:** script del editor en `Base.astro` (`ca-pub-8300766188725023`).

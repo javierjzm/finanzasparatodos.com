@@ -7,19 +7,19 @@ Si aún no tienes cuenta, regístrate gratis en [dash.cloudflare.com](https://da
 ## 2. Subir el proyecto a GitHub
 
 ```bash
-cd finanzasparatodos.com
+cd finanzasguias.com
 git init
 git add .
 git commit -m "Initial commit: sitio completo con 10 artículos"
 git branch -M main
-git remote add origin https://github.com/tu-usuario/finanzasparatodos.com.git
+git remote add origin https://github.com/tu-usuario/finanzasguias.com.git
 git push -u origin main
 ```
 
 ## 3. Conectar GitHub con Cloudflare Pages
 
 1. Ve a [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
-2. Selecciona tu repositorio `finanzasparatodos.com`.
+2. Selecciona tu repositorio `finanzasguias.com`.
 3. Configura el build:
    - **Framework preset:** Astro
    - **Build command:** `npm run build`
@@ -27,12 +27,12 @@ git push -u origin main
    - **Node.js version:** 18 (o superior)
 4. Haz clic en **Save and Deploy**.
 
-El primer build tardará 1-2 minutos. Cloudflare te asignará un dominio temporal tipo `finanzasparatodos-com.pages.dev`.
+El primer build tardará 1-2 minutos. Cloudflare te asignará un dominio temporal tipo `finanzasguias-com.pages.dev`.
 
 ## 4. Añadir dominio personalizado
 
 1. En el dashboard de tu proyecto en Pages, ve a **Custom domains** → **Set up a custom domain**.
-2. Escribe `finanzasparatodos.com` y haz clic en **Continue**.
+2. Escribe `finanzasguias.com` y haz clic en **Continue**.
 3. Cloudflare te indicará los registros DNS necesarios.
 
 ## 5. Configurar DNS
@@ -47,8 +47,8 @@ Añade estos registros DNS en tu registrador:
 
 | Tipo | Nombre | Contenido |
 |------|--------|-----------|
-| CNAME | `@` | `finanzasparatodos-com.pages.dev` |
-| CNAME | `www` | `finanzasparatodos-com.pages.dev` |
+| CNAME | `@` | `finanzasguias-com.pages.dev` |
+| CNAME | `www` | `finanzasguias-com.pages.dev` |
 
 La propagación DNS puede tardar hasta 24 horas (normalmente menos de 1 hora).
 
@@ -57,7 +57,7 @@ La propagación DNS puede tardar hasta 24 horas (normalmente menos de 1 hora).
 Una vez desplegado, verifica que los headers del archivo `_headers` se aplican correctamente:
 
 ```bash
-curl -I https://finanzasparatodos.com
+curl -I https://finanzasguias.com
 ```
 
 Deberías ver:
@@ -71,13 +71,13 @@ Content-Security-Policy: ...
 ## 7. Conectar Google Search Console
 
 1. Ve a [search.google.com/search-console](https://search.google.com/search-console).
-2. Añade la propiedad `https://finanzasparatodos.com`.
+2. Añade la propiedad `https://finanzasguias.com`.
 3. Método de verificación recomendado: **archivo HTML**.
    - Descarga el archivo HTML que te proporciona Google.
    - Colócalo en la carpeta `public/` de tu proyecto.
    - Haz commit y push. Cloudflare lo desplegará automáticamente.
 4. Vuelve a Search Console y haz clic en **Verificar**.
-5. Envía el sitemap: `https://finanzasparatodos.com/sitemap-index.xml`.
+5. Envía el sitemap: `https://finanzasguias.com/sitemap-index.xml`.
 
 ## 8. Conectar Google Analytics 4
 

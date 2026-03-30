@@ -16,21 +16,8 @@
 </div>
 
 <script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('consent', 'default', {
-    analytics_storage: 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    wait_for_update: 500
-  });
-
-  gtag('js', new Date());
-
-  (function() {
-    var consent = localStorage.getItem('fpt_consent');
+  (function () {
+    var consent = localStorage.getItem('finanzasguias_consent');
 
     if (consent === null) {
       document.getElementById('cookie-banner').style.display = 'flex';
@@ -41,13 +28,13 @@
     }
 
     document.getElementById('cookie-accept').addEventListener('click', function() {
-      localStorage.setItem('fpt_consent', 'true');
+      localStorage.setItem('finanzasguias_consent', 'true');
       grantConsent();
       hideBanner();
     });
 
     document.getElementById('cookie-reject').addEventListener('click', function() {
-      localStorage.setItem('fpt_consent', 'false');
+      localStorage.setItem('finanzasguias_consent', 'false');
       denyConsent();
       hideBanner();
     });
@@ -57,9 +44,8 @@
         analytics_storage: 'granted',
         ad_storage: 'granted',
         ad_user_data: 'granted',
-        ad_personalization: 'granted'
+        ad_personalization: 'granted',
       });
-      loadGA4();
     }
 
     function denyConsent() {
@@ -69,16 +55,6 @@
         ad_user_data: 'denied',
         ad_personalization: 'denied'
       });
-    }
-
-    function loadGA4() {
-      if (document.getElementById('ga4-script')) return;
-      var s = document.createElement('script');
-      s.id = 'ga4-script';
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
-      document.head.appendChild(s);
-      gtag('config', 'G-XXXXXXXXXX');
     }
 
     function hideBanner() {

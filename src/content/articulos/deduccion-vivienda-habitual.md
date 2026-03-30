@@ -5,7 +5,7 @@ category: "deducciones"
 keywords: ["deduccion vivienda habitual", "deduccion hipoteca renta", "desgravacion vivienda", "deduccion vivienda irpf", "compra vivienda antes 2013"]
 datePublished: 2025-02-10
 dateModified: 2025-02-10
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["tramos-irpf-2025", "como-calcular-irpf"]
 schema: "faq"

@@ -5,7 +5,7 @@ category: "inversiones"
 keywords: ["fiscalidad fondos inversion", "traspaso fondos sin tributar", "impuestos fondos inversion", "fondos inversion vs etf fiscalidad", "tributacion fondos 2025"]
 datePublished: 2025-02-25
 dateModified: 2025-02-25
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 relatedPosts: ["impuesto-plusvalias", "tramos-irpf-2025"]
 schema: "faq"
 ---

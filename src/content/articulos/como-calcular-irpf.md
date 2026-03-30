@@ -5,7 +5,7 @@ category: "irpf"
 keywords: ["calcular irpf", "como calcular irpf", "calculo irpf 2025", "base imponible irpf", "ejemplo calculo renta"]
 datePublished: 2025-01-20
 dateModified: 2025-01-20
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["tramos-irpf-2025", "declaracion-renta-plazo"]
 schema: "howto"

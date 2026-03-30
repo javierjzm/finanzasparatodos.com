@@ -5,7 +5,7 @@ category: "irpf"
 keywords: ["tramos irpf 2025", "tabla irpf 2025", "tipos irpf", "cuanto pago de irpf", "tramos renta 2025"]
 datePublished: 2025-01-15
 dateModified: 2025-01-15
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["como-calcular-irpf", "declaracion-renta-plazo"]
 schema: "faq"

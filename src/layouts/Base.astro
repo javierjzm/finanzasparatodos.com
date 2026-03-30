@@ -18,17 +18,17 @@ const {
   noindex = false,
 } = Astro.props;
 
-const siteName = 'Finanzas Para Todos';
+const siteName = 'Finanzas Guías';
 
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: siteName,
-  url: 'https://finanzasparatodos.com',
+  url: 'https://finanzasguias.com',
   description: 'Fiscalidad y finanzas personales explicadas con claridad para particulares y autónomos en España.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://finanzasparatodos.com/buscar?q={search_term_string}',
+    target: 'https://finanzasguias.com/buscar?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 };
@@ -37,11 +37,11 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: siteName,
-  url: 'https://finanzasparatodos.com',
-  logo: 'https://finanzasparatodos.com/logo.png',
+  url: 'https://finanzasguias.com',
+  logo: 'https://finanzasguias.com/logo.png',
   contactPoint: {
     '@type': 'ContactPoint',
-    email: 'hola@finanzasparatodos.com',
+    email: 'hola@finanzasguias.com',
     contactType: 'customer service',
     availableLanguage: 'Spanish',
   },
@@ -53,6 +53,37 @@ const orgSchema = {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Consent Mode por defecto (antes de GTM y AdSense) -->
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500,
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script is:inline>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WSLWLFNS');
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8300766188725023"
+    crossorigin="anonymous"></script>
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
@@ -90,9 +121,17 @@ const orgSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 </head>
 <body>
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-WSLWLFNS"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+      title="Google Tag Manager"></iframe>
+  </noscript>
   <header class="site-header">
     <div class="header-inner">
-      <a href="/" class="site-logo">finanzas<strong>paratodos</strong></a>
+      <a href="/" class="site-logo">finanzas<strong>guías</strong></a>
       <nav class="main-nav">
         <a href="/irpf/">IRPF</a>
         <a href="/autonomos/">Autónomos</a>
@@ -124,7 +163,7 @@ const orgSchema = {
       <a href="/politica-cookies">Cookies</a>
       <a href="/contacto">Contacto</a>
     </div>
-    <p>&copy; {new Date().getFullYear()} finanzasparatodos.com. Todos los derechos reservados.</p>
+    <p>&copy; {new Date().getFullYear()} finanzasguias.com. Todos los derechos reservados.</p>
     <p class="footer-disclaimer">Contenido informativo. No constituye asesoramiento fiscal, legal ni financiero personalizado.</p>
   </footer>
 

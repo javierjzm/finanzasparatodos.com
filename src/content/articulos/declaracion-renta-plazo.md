@@ -5,7 +5,7 @@ category: "irpf"
 keywords: ["declaracion renta 2025 plazo", "cuando empieza la renta 2025", "fecha declaracion renta", "plazo renta 2025", "cita previa renta"]
 datePublished: 2025-02-15
 dateModified: 2025-02-15
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 relatedPosts: ["tramos-irpf-2025", "como-calcular-irpf"]
 schema: "faq"
 ---

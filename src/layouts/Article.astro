@@ -24,7 +24,7 @@ const {
   category,
   datePublished,
   dateModified,
-  author = 'Equipo editorial de Finanzas Para Todos',
+  author = 'Equipo editorial de Finanzas Guías',
   headings,
   relatedSlugs = [],
   schema = 'article',
@@ -66,8 +66,8 @@ const articleSchema = {
   author: { '@type': 'Organization', name: author },
   publisher: {
     '@type': 'Organization',
-    name: 'Finanzas Para Todos',
-    url: 'https://finanzasparatodos.com',
+    name: 'Finanzas Guías',
+    url: 'https://finanzasguias.com',
   },
   datePublished: datePublished.toISOString(),
   dateModified: (dateModified || datePublished).toISOString(),
@@ -78,7 +78,7 @@ const articleSchema = {
 };
 ---
 
-<Base title={`${title} | Finanzas Para Todos`} description={description}>
+<Base title={`${title} | Finanzas Guías`} description={description}>
   <div class="article-layout">
     <div class="article-main">
       <Breadcrumb items={breadcrumbItems} />

@@ -5,7 +5,7 @@ category: "inversiones"
 keywords: ["impuesto plusvalias", "plusvalias acciones", "tributacion ganancias patrimoniales", "base del ahorro irpf", "tipos plusvalias 2025"]
 datePublished: 2025-02-05
 dateModified: 2025-02-05
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["fondos-inversion-fiscalidad", "tramos-irpf-2025"]
 schema: "faq"

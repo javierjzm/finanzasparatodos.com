@@ -5,7 +5,7 @@ category: "autonomos"
 keywords: ["cuota autonomos 2025", "tabla autonomos ingresos reales", "cotizacion autonomos 2025", "base cotizacion autonomos", "cuanto paga un autonomo"]
 datePublished: 2025-01-25
 dateModified: 2025-01-25
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["gastos-deducibles-autonomos", "modelo-130"]
 schema: "faq"

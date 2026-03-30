@@ -11,7 +11,7 @@ export async function GET(context: APIContext) {
     .slice(0, 20);
 
   return rss({
-    title: 'Finanzas Para Todos',
+    title: 'Finanzas Guías',
     description:
       'Guías claras y actualizadas sobre IRPF, fiscalidad para autónomos, inversiones y deducciones fiscales en España.',
     site: context.site!.toString(),

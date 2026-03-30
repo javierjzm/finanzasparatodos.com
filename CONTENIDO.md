@@ -12,7 +12,7 @@ category: "irpf"  # irpf | autonomos | inversiones | deducciones | fiscalidad-in
 keywords: ["keyword principal", "keyword secundaria", "keyword larga"]
 datePublished: 2025-01-15
 dateModified: 2025-01-15
-author: "Equipo editorial de Finanzas Para Todos"
+author: "Equipo editorial de Finanzas Guías"
 pillar: false        # true si es un artículo pilar de la categoría
 relatedPosts: ["slug-articulo-1", "slug-articulo-2"]
 schema: "article"    # article | faq | howto

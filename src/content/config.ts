@@ -15,7 +15,7 @@ const articulos = defineCollection({
     keywords: z.array(z.string()).default([]),
     datePublished: z.coerce.date(),
     dateModified: z.coerce.date().optional(),
-    author: z.string().default('Equipo editorial de Finanzas Para Todos'),
+    author: z.string().default('Equipo editorial de Finanzas Guías'),
     canonical: z.string().url().optional(),
     noindex: z.boolean().default(false),
     adSlots: z.boolean().default(true),
