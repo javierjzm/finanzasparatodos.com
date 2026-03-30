@@ -1,0 +1,29 @@
+---
+import Category from '../../layouts/Category.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articulos');
+const articles = allArticles
+  .filter((a) => a.data.category === 'irpf')
+  .sort((a, b) => b.data.datePublished.getTime() - a.data.datePublished.getTime())
+  .map((a) => ({
+    title: a.data.title,
+    description: a.data.description,
+    href: `/irpf/${a.slug}/`,
+    date: a.data.datePublished.toLocaleDateString('es-ES', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    }),
+  }));
+
+const description = `El Impuesto sobre la Renta de las Personas Físicas (IRPF) es el tributo más importante para la mayoría de contribuyentes en España. Afecta a los rendimientos del trabajo, las actividades económicas, las rentas del capital y las ganancias patrimoniales. Conocer cómo funciona —sus tramos, deducciones, plazos y particularidades autonómicas— es esencial para optimizar tu declaración y evitar errores que pueden costarte dinero. En esta sección encontrarás guías detalladas, tablas actualizadas y ejemplos prácticos que te ayudarán a entender cada aspecto del IRPF, desde el cálculo de la base imponible hasta las opciones de tributación conjunta o individual.`;
+---
+
+<Category
+  categoryName="Todo sobre el IRPF"
+  categorySlug="irpf"
+  description={description}
+  metaDescription="Guías completas sobre el IRPF: tramos actualizados, cómo calcular tu declaración, plazos y deducciones aplicables en España."
+  articles={articles}
+/>

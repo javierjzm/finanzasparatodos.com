@@ -1,0 +1,49 @@
+---
+import Base from './Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import AdSlot from '../components/AdSlot.astro';
+
+interface ArticleCard {
+  title: string;
+  description: string;
+  href: string;
+  date: string;
+}
+
+interface Props {
+  categoryName: string;
+  categorySlug: string;
+  description: string;
+  metaDescription: string;
+  articles: ArticleCard[];
+}
+
+const { categoryName, categorySlug, description, metaDescription, articles } = Astro.props;
+
+const breadcrumbItems = [
+  { label: 'Inicio', href: '/' },
+  { label: categoryName, href: `/${categorySlug}/` },
+];
+---
+
+<Base title={`${categoryName} | Finanzas Para Todos`} description={metaDescription}>
+  <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <Breadcrumb items={breadcrumbItems} />
+
+    <h1 class="section-title">{categoryName}</h1>
+    <p class="section-subtitle" set:html={description} />
+
+    <div class="articles-grid">
+      {articles.map((article, index) => (
+        <>
+          <a href={article.href} class="article-card">
+            <h3>{article.title}</h3>
+            <p class="card-description">{article.description}</p>
+            <span class="card-date">{article.date}</span>
+          </a>
+          {index === 3 && <AdSlot slot={`category-${categorySlug}`} size="rectangle" />}
+        </>
+      ))}
+    </div>
+  </div>
+</Base>

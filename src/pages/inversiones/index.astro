@@ -1,0 +1,29 @@
+---
+import Category from '../../layouts/Category.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articulos');
+const articles = allArticles
+  .filter((a) => a.data.category === 'inversiones')
+  .sort((a, b) => b.data.datePublished.getTime() - a.data.datePublished.getTime())
+  .map((a) => ({
+    title: a.data.title,
+    description: a.data.description,
+    href: `/inversiones/${a.slug}/`,
+    date: a.data.datePublished.toLocaleDateString('es-ES', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    }),
+  }));
+
+const description = `Invertir va mucho más allá de elegir un buen producto financiero: la fiscalidad puede ser la diferencia entre una inversión rentable y una que apenas genera beneficio neto. En España, las ganancias patrimoniales, los dividendos, los intereses y las rentas del capital tributan dentro de la base del ahorro del IRPF con tipos específicos. Además, existen mecanismos legales como el traspaso entre fondos de inversión o la compensación de pérdidas que permiten optimizar la factura fiscal sin asumir más riesgo. Aquí encontrarás guías prácticas sobre cómo tributan acciones, fondos, ETFs, planes de pensiones y otros instrumentos de ahorro.`;
+---
+
+<Category
+  categoryName="Impuestos sobre inversiones y ahorro"
+  categorySlug="inversiones"
+  description={description}
+  metaDescription="Fiscalidad de inversiones en España: cómo tributan acciones, fondos, ETFs, dividendos y plusvalías. Guías prácticas para optimizar tu ahorro fiscal."
+  articles={articles}
+/>

@@ -1,0 +1,52 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+const tocItems = headings.filter((h) => h.depth === 2);
+---
+
+{tocItems.length > 0 && (
+  <nav class="toc" aria-label="Índice de contenidos">
+    <h2 class="toc-title">Índice</h2>
+    <ol class="toc-list">
+      {tocItems.map((heading) => (
+        <li>
+          <a href={`#${heading.slug}`} class="toc-link">
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+)}
+
+<script>
+  const links = document.querySelectorAll('.toc-link');
+  const headings = document.querySelectorAll('article h2[id]');
+
+  if (headings.length > 0 && links.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            links.forEach((l) => l.classList.remove('active'));
+            const id = entry.target.getAttribute('id');
+            const active = document.querySelector(`.toc-link[href="#${id}"]`);
+            if (active) active.classList.add('active');
+          }
+        });
+      },
+      { rootMargin: '-80px 0px -60% 0px', threshold: 0 }
+    );
+
+    headings.forEach((h) => observer.observe(h));
+  }
+</script>

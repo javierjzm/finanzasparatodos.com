@@ -1,0 +1,133 @@
+---
+import CookieBanner from '../components/CookieBanner.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  ogImage = '/og-default.png',
+  noindex = false,
+} = Astro.props;
+
+const siteName = 'Finanzas Para Todos';
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteName,
+  url: 'https://finanzasparatodos.com',
+  description: 'Fiscalidad y finanzas personales explicadas con claridad para particulares y autónomos en España.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://finanzasparatodos.com/buscar?q={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: siteName,
+  url: 'https://finanzasparatodos.com',
+  logo: 'https://finanzasparatodos.com/logo.png',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'hola@finanzasparatodos.com',
+    contactType: 'customer service',
+    availableLanguage: 'Spanish',
+  },
+};
+---
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:site_name" content={siteName} />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  </noscript>
+
+  <!-- Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">finanzas<strong>paratodos</strong></a>
+      <nav class="main-nav">
+        <a href="/irpf/">IRPF</a>
+        <a href="/autonomos/">Autónomos</a>
+        <a href="/inversiones/">Inversiones</a>
+        <a href="/deducciones/">Deducciones</a>
+        <a href="/fiscalidad-internacional/">Internacional</a>
+        <form action="/buscar" method="get" class="nav-search-form" role="search">
+          <input
+            type="search"
+            name="q"
+            class="nav-search"
+            placeholder="Buscar…"
+            aria-label="Buscar en el sitio"
+          />
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/sobre-nosotros">Sobre nosotros</a>
+      <a href="/politica-privacidad">Privacidad</a>
+      <a href="/aviso-legal">Aviso legal</a>
+      <a href="/politica-cookies">Cookies</a>
+      <a href="/contacto">Contacto</a>
+    </div>
+    <p>&copy; {new Date().getFullYear()} finanzasparatodos.com. Todos los derechos reservados.</p>
+    <p class="footer-disclaimer">Contenido informativo. No constituye asesoramiento fiscal, legal ni financiero personalizado.</p>
+  </footer>
+
+  <CookieBanner />
+</body>
+</html>

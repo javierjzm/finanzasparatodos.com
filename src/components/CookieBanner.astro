@@ -1,0 +1,88 @@
+---
+---
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentimiento de cookies" style="display:none;">
+  <div class="cookie-banner-inner">
+    <p>
+      Usamos cookies propias y de terceros para analítica y publicidad.
+      Puedes aceptar todas o solo las esenciales.
+      <a href="/politica-cookies">Más información</a>.
+    </p>
+    <div class="cookie-buttons">
+      <button id="cookie-accept" class="btn btn-primary" type="button">Aceptar todas</button>
+      <button id="cookie-reject" class="btn btn-secondary" type="button">Solo esenciales</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+
+  gtag('js', new Date());
+
+  (function() {
+    var consent = localStorage.getItem('fpt_consent');
+
+    if (consent === null) {
+      document.getElementById('cookie-banner').style.display = 'flex';
+    } else if (consent === 'true') {
+      grantConsent();
+    } else {
+      denyConsent();
+    }
+
+    document.getElementById('cookie-accept').addEventListener('click', function() {
+      localStorage.setItem('fpt_consent', 'true');
+      grantConsent();
+      hideBanner();
+    });
+
+    document.getElementById('cookie-reject').addEventListener('click', function() {
+      localStorage.setItem('fpt_consent', 'false');
+      denyConsent();
+      hideBanner();
+    });
+
+    function grantConsent() {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
+      loadGA4();
+    }
+
+    function denyConsent() {
+      gtag('consent', 'update', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+    }
+
+    function loadGA4() {
+      if (document.getElementById('ga4-script')) return;
+      var s = document.createElement('script');
+      s.id = 'ga4-script';
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+      document.head.appendChild(s);
+      gtag('config', 'G-XXXXXXXXXX');
+    }
+
+    function hideBanner() {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  })();
+</script>

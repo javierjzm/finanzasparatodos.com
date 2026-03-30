@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Buscar artículos | Finanzas Para Todos"
+  description="Busca artículos sobre IRPF, autónomos, deducciones, inversiones y fiscalidad internacional."
+>
+  <section class="search-page">
+    <h1 class="section-title">Buscar en el sitio</h1>
+    <p class="section-subtitle">Encuentra guías por tema, impuesto o palabra clave.</p>
+
+    <form action="/buscar" method="get" class="search-form" role="search">
+      <input
+        id="search-input"
+        type="search"
+        name="q"
+        class="search-input"
+        placeholder="Ejemplo: tramos irpf, modelo 130, vivienda habitual"
+        autocomplete="off"
+      />
+    </form>
+
+    <p id="search-result-count" class="search-result-count"></p>
+    <div id="search-results" class="articles-grid"></div>
+    <p id="search-empty" class="search-empty" style="display:none;">
+      No se han encontrado resultados con ese término. Prueba con otra palabra o una variante.
+    </p>
+  </section>
+
+  <script is:inline>
+    (async function () {
+      var params = new URLSearchParams(window.location.search);
+      var q = (params.get('q') || '').trim();
+      var input = document.getElementById('search-input');
+      var countEl = document.getElementById('search-result-count');
+      var resultsEl = document.getElementById('search-results');
+      var emptyEl = document.getElementById('search-empty');
+      if (!input || !countEl || !resultsEl || !emptyEl) return;
+      input.value = q;
+
+      if (!q) {
+        countEl.textContent = 'Escribe una búsqueda para ver resultados.';
+        return;
+      }
+
+      var res = await fetch('/search-index.json');
+      var items = await res.json();
+      var normalized = q.toLowerCase();
+      var matches = items.filter(function (item) {
+        var haystack = [
+          item.title,
+          item.description,
+          (item.keywords || []).join(' '),
+          item.category
+        ].join(' ').toLowerCase();
+        return haystack.includes(normalized);
+      });
+
+      countEl.textContent = matches.length + ' resultado(s) para "' + q + '".';
+      if (!matches.length) {
+        emptyEl.style.display = 'block';
+        return;
+      }
+
+      resultsEl.innerHTML = matches.map(function (item) {
+        var date = new Date(item.datePublished).toLocaleDateString('es-ES', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric'
+        });
+        return (
+          '<a class="article-card" href="' + item.url + '">' +
+            '<h3>' + item.title + '</h3>' +
+            '<p class="card-description">' + item.description + '</p>' +
+            '<span class="card-date">' + date + '</span>' +
+          '</a>'
+        );
+      }).join('');
+    })();
+  </script>
+</Base>

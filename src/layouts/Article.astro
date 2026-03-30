@@ -1,0 +1,143 @@
+---
+import Base from './Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import AdSlot from '../components/AdSlot.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  datePublished: Date;
+  dateModified?: Date;
+  author?: string;
+  headings: { depth: number; slug: string; text: string }[];
+  relatedSlugs?: string[];
+  schema?: 'article' | 'faq' | 'howto';
+}
+
+const {
+  title,
+  description,
+  category,
+  datePublished,
+  dateModified,
+  author = 'Equipo editorial de Finanzas Para Todos',
+  headings,
+  relatedSlugs = [],
+  schema = 'article',
+} = Astro.props;
+
+const categoryNames: Record<string, string> = {
+  irpf: 'IRPF',
+  autonomos: 'Autónomos',
+  inversiones: 'Inversiones',
+  deducciones: 'Deducciones',
+  'fiscalidad-internacional': 'Fiscalidad Internacional',
+};
+
+const categoryLabel = categoryNames[category] || category;
+const pubDate = datePublished.toISOString().split('T')[0];
+const modDate = dateModified ? dateModified.toISOString().split('T')[0] : null;
+
+const breadcrumbItems = [
+  { label: 'Inicio', href: '/' },
+  { label: categoryLabel, href: `/${category}/` },
+  { label: title, href: Astro.url.pathname },
+];
+
+const allArticles = await getCollection('articulos');
+const relatedPosts = relatedSlugs
+  .map((slug) => allArticles.find((a) => a.slug === slug))
+  .filter(Boolean)
+  .map((a) => ({
+    title: a!.data.title,
+    description: a!.data.description,
+    href: `/${a!.data.category}/${a!.slug}/`,
+  }));
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  author: { '@type': 'Organization', name: author },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Finanzas Para Todos',
+    url: 'https://finanzasparatodos.com',
+  },
+  datePublished: datePublished.toISOString(),
+  dateModified: (dateModified || datePublished).toISOString(),
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': Astro.url.href,
+  },
+};
+---
+
+<Base title={`${title} | Finanzas Para Todos`} description={description}>
+  <div class="article-layout">
+    <div class="article-main">
+      <Breadcrumb items={breadcrumbItems} />
+
+      <AdSlot slot="top-banner" size="banner" />
+
+      <h1 class="article-title">{title}</h1>
+
+      <div class="article-meta">
+        <span>Publicado: <time datetime={pubDate}>{pubDate}</time></span>
+        {modDate && modDate !== pubDate && (
+          <span>Actualizado: <time datetime={modDate}>{modDate}</time></span>
+        )}
+        <span>Por {author}</span>
+      </div>
+
+      <div class="disclaimer-box">
+        Este artículo tiene carácter informativo y no constituye asesoramiento fiscal, legal ni financiero personalizado. Consulta con un profesional antes de tomar decisiones que afecten a tu situación particular.
+      </div>
+
+      <div class="article-content">
+        <slot />
+      </div>
+
+      <!-- AD_SLOT: in-content (se inserta automáticamente tras el segundo párrafo) -->
+      <div id="in-content-ad-anchor">
+        <AdSlot slot="in-content" size="rectangle" />
+      </div>
+
+      <!-- AD_SLOT: below-content -->
+      <AdSlot slot="below-content" size="rectangle" />
+
+      {relatedPosts.length > 0 && <RelatedPosts posts={relatedPosts} />}
+    </div>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-sticky">
+        <TableOfContents headings={headings} />
+        <!-- AD_SLOT: sidebar -->
+        <AdSlot slot="sidebar" size="sidebar" desktopOnly />
+      </div>
+    </aside>
+  </div>
+
+  <!-- AD_SLOT: anchor-mobile (fixed bottom, mobile only) -->
+  <AdSlot slot="anchor-mobile" size="anchor" mobileOnly />
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script is:inline>
+    (function () {
+      var anchor = document.getElementById('in-content-ad-anchor');
+      var content = document.querySelector('.article-content');
+      if (!anchor || !content) return;
+      var paragraphs = content.querySelectorAll('p');
+      if (paragraphs.length >= 2) {
+        paragraphs[1].insertAdjacentElement('afterend', anchor);
+      } else {
+        content.appendChild(anchor);
+      }
+    })();
+  </script>
+</Base>

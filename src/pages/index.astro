@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articulos');
+const recentArticles = allArticles
+  .sort((a, b) => b.data.datePublished.getTime() - a.data.datePublished.getTime())
+  .slice(0, 6);
+
+const categories = [
+  {
+    icon: '📋',
+    name: 'IRPF',
+    slug: 'irpf',
+    desc: 'Tramos, cálculos y todo lo que necesitas saber sobre el Impuesto sobre la Renta de las Personas Físicas.',
+  },
+  {
+    icon: '💼',
+    name: 'Autónomos',
+    slug: 'autonomos',
+    desc: 'Cuotas, gastos deducibles, modelos trimestrales y obligaciones fiscales del trabajador por cuenta propia.',
+  },
+  {
+    icon: '📈',
+    name: 'Inversiones',
+    slug: 'inversiones',
+    desc: 'Fiscalidad de acciones, fondos, ETFs, criptomonedas y otros productos de ahorro e inversión.',
+  },
+  {
+    icon: '🏠',
+    name: 'Deducciones',
+    slug: 'deducciones',
+    desc: 'Todas las deducciones estatales y autonómicas que puedes aplicar para reducir tu factura fiscal.',
+  },
+  {
+    icon: '🌍',
+    name: 'Fiscalidad internacional',
+    slug: 'fiscalidad-internacional',
+    desc: 'Residencia fiscal, convenios de doble imposición y tributación de rentas obtenidas en el extranjero.',
+  },
+];
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<Base
+  title="Fiscalidad y finanzas personales explicadas con claridad | Finanzas Para Todos"
+  description="Guías claras y actualizadas sobre IRPF, fiscalidad para autónomos, inversiones y deducciones. Información fiscal práctica para particulares en España."
+>
+  <section class="hero">
+    <h1>Fiscalidad y finanzas personales explicadas con claridad</h1>
+    <p>
+      Guías prácticas y actualizadas sobre impuestos, deducciones y obligaciones fiscales
+      para que tomes mejores decisiones con tu dinero.
+    </p>
+  </section>
+
+  <AdSlot slot="after-hero" size="banner" />
+
+  <section class="container">
+    <h2 class="section-title text-center">Explora por categoría</h2>
+    <p class="section-subtitle text-center">Encuentra la información fiscal que necesitas</p>
+    <div class="category-grid">
+      {categories.map((cat) => (
+        <a href={`/${cat.slug}/`} class="category-card">
+          <span class="icon">{cat.icon}</span>
+          <h3>{cat.name}</h3>
+          <p>{cat.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container mt-2">
+    <h2 class="section-title text-center">Artículos recientes</h2>
+    <p class="section-subtitle text-center">Lo último publicado en el blog</p>
+    <div class="articles-grid">
+      {recentArticles.map((article) => (
+        <a href={`/${article.data.category}/${article.slug}/`} class="article-card">
+          <h3>{article.data.title}</h3>
+          <p class="card-description">{article.data.description}</p>
+          <span class="card-date">{formatDate(article.data.datePublished)}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <AdSlot slot="after-recent-posts" size="rectangle" />
+</Base>

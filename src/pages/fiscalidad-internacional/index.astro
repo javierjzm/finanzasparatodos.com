@@ -1,0 +1,29 @@
+---
+import Category from '../../layouts/Category.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articulos');
+const articles = allArticles
+  .filter((a) => a.data.category === 'fiscalidad-internacional')
+  .sort((a, b) => b.data.datePublished.getTime() - a.data.datePublished.getTime())
+  .map((a) => ({
+    title: a.data.title,
+    description: a.data.description,
+    href: `/fiscalidad-internacional/${a.slug}/`,
+    date: a.data.datePublished.toLocaleDateString('es-ES', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    }),
+  }));
+
+const description = `La globalización ha hecho que cada vez más personas trabajen, inviertan o residan fuera de su país de origen. Entender las implicaciones fiscales de vivir entre dos países, cambiar de residencia fiscal o percibir ingresos del extranjero es fundamental para cumplir correctamente con tus obligaciones tributarias y evitar la doble imposición. España tiene convenios de doble imposición con más de 90 países que determinan qué Estado tiene derecho a gravar cada tipo de renta. En esta sección abordamos la residencia fiscal, el modelo 720, los convenios internacionales y las situaciones más comunes que afectan a expatriados, nómadas digitales e inversores con activos en el exterior.`;
+---
+
+<Category
+  categoryName="Vivir y trabajar fuera de España"
+  categorySlug="fiscalidad-internacional"
+  description={description}
+  metaDescription="Fiscalidad internacional: residencia fiscal en España, convenios de doble imposición, tributación de rentas del extranjero y guías para expatriados."
+  articles={articles}
+/>

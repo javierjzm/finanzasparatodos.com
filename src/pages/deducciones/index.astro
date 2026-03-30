@@ -1,0 +1,29 @@
+---
+import Category from '../../layouts/Category.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articulos');
+const articles = allArticles
+  .filter((a) => a.data.category === 'deducciones')
+  .sort((a, b) => b.data.datePublished.getTime() - a.data.datePublished.getTime())
+  .map((a) => ({
+    title: a.data.title,
+    description: a.data.description,
+    href: `/deducciones/${a.slug}/`,
+    date: a.data.datePublished.toLocaleDateString('es-ES', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    }),
+  }));
+
+const description = `El sistema fiscal español contempla numerosas deducciones que pueden reducir significativamente lo que pagas en tu declaración de la renta. Algunas son estatales y se aplican en todo el territorio; otras son autonómicas y varían según tu comunidad de residencia. Desde la deducción por inversión en vivienda habitual (para quienes compraron antes de 2013) hasta las deducciones por maternidad, familia numerosa, discapacidad, donativos o eficiencia energética, conocer todas las opciones disponibles es fundamental para no dejar dinero sobre la mesa. En esta sección te explicamos cada deducción con sus requisitos, importes máximos y ejemplos prácticos.`;
+---
+
+<Category
+  categoryName="Deducciones y beneficios fiscales"
+  categorySlug="deducciones"
+  description={description}
+  metaDescription="Todas las deducciones fiscales en España: vivienda habitual, maternidad, familia numerosa, donativos y más. Requisitos y ejemplos prácticos."
+  articles={articles}
+/>

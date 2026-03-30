@@ -1,0 +1,29 @@
+---
+import Category from '../../layouts/Category.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articulos');
+const articles = allArticles
+  .filter((a) => a.data.category === 'autonomos')
+  .sort((a, b) => b.data.datePublished.getTime() - a.data.datePublished.getTime())
+  .map((a) => ({
+    title: a.data.title,
+    description: a.data.description,
+    href: `/autonomos/${a.slug}/`,
+    date: a.data.datePublished.toLocaleDateString('es-ES', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    }),
+  }));
+
+const description = `Ser autónomo en España implica cumplir con un conjunto específico de obligaciones fiscales y con la Seguridad Social que van más allá del IRPF. Desde la cuota mensual de autónomos —ahora calculada según tus ingresos reales— hasta los modelos trimestrales que debes presentar ante Hacienda, pasando por los gastos que puedes deducirte legalmente de tu actividad. En esta sección cubrimos todo lo que un trabajador por cuenta propia necesita saber: cotización, facturación, IVA, retenciones, modelos 130, 303 y 390, y las novedades normativas que afectan a los autónomos cada ejercicio fiscal.`;
+---
+
+<Category
+  categoryName="Fiscalidad para autónomos"
+  categorySlug="autonomos"
+  description={description}
+  metaDescription="Todo sobre la fiscalidad del autónomo en España: cuotas, gastos deducibles, modelos trimestrales y obligaciones con Hacienda y la Seguridad Social."
+  articles={articles}
+/>
