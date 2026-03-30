@@ -22,7 +22,7 @@ El Real Decreto-ley 13/2022 estableció un nuevo sistema de cotización para el 
 Para determinar en qué tramo te encuentras, la Seguridad Social toma como referencia tus **rendimientos netos mensuales**, que se calculan así:
 
 1. Se parte de los **ingresos íntegros** de tu actividad económica (facturación total).
-2. Se restan los **gastos deducibles** necesarios para obtener esos ingresos.
+2. Se restan los **gastos deducibles** necesarios para obtener esos ingresos. Puedes ver la lista completa de [gastos deducibles para autónomos](/autonomos/gastos-deducibles-autonomos/) y cómo justificarlos ante Hacienda.
 3. Al resultado se le aplica una **deducción por gastos genéricos del 7 %** (3 % para autónomos societarios).
 4. La cifra resultante se divide entre 12 para obtener el rendimiento neto mensual.
 
@@ -133,7 +133,7 @@ La solicitud se hace en el momento del alta a través de Import@ss o en la ofici
 
 ## Regularización anual: ¿qué pasa si mis ingresos varían?
 
-Al cierre de cada ejercicio fiscal, cuando presentas tu declaración de la renta, la Agencia Tributaria comunica tus rendimientos reales a la Seguridad Social. Se produce entonces la **regularización**:
+Al cierre de cada ejercicio fiscal, cuando presentas tu [declaración de la renta](/irpf/declaracion-renta-plazo/), la Agencia Tributaria comunica tus rendimientos reales a la Seguridad Social. Se produce entonces la **regularización**:
 
 - **Has cotizado por debajo** de lo que te correspondía: la Seguridad Social te emitirá una liquidación complementaria con la diferencia. Tendrás un plazo para abonarla sin recargo.
 - **Has cotizado por encima**: la Tesorería te devolverá de oficio la diferencia, normalmente mediante transferencia bancaria.

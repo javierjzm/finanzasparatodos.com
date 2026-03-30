@@ -15,7 +15,7 @@ La deducción por inversión en vivienda habitual fue, durante décadas, uno de 
 
 ## Breve historia de la deducción por vivienda habitual
 
-Desde la reforma del IRPF de 1998, cualquier contribuyente que comprara su vivienda habitual podía deducirse un porcentaje de las cantidades invertidas —incluidos los pagos de la hipoteca— directamente en su declaración de la renta. Esta deducción estatal llegaba al **15 % de las cantidades pagadas**, con un límite de base de deducción de **9.040 € anuales**.
+Desde la reforma del IRPF de 1998, cualquier contribuyente que comprara su vivienda habitual podía deducirse un porcentaje de las cantidades invertidas —incluidos los pagos de la hipoteca— directamente en su declaración de la renta. Esta deducción estatal llegaba al **15 % de las cantidades pagadas**, con un límite de base de deducción de **9.040 € anuales**. Para entender cómo encaja esta deducción dentro del cálculo global del impuesto, consulta nuestra guía sobre [cómo calcular el IRPF paso a paso](/irpf/como-calcular-irpf/).
 
 Con la llegada de la crisis económica y la necesidad de ajustar las cuentas públicas, el Gobierno aprobó la **Ley 16/2012, de 27 de diciembre**, que suprimió la deducción por inversión en vivienda habitual con efectos desde el **1 de enero de 2013**. A partir de esa fecha, las nuevas adquisiciones dejaron de generar derecho a esta deducción.
 
@@ -28,7 +28,7 @@ El régimen transitorio, regulado en la disposición transitoria decimoctava de 
 1. **Haber adquirido su vivienda habitual antes del 1 de enero de 2013**, o haber satisfecho cantidades antes de esa fecha para la construcción, ampliación, rehabilitación u obras por razones de discapacidad en dicha vivienda.
 2. **Haber practicado la deducción por dicha vivienda en la declaración del IRPF de 2012 o de un ejercicio anterior**. Es decir, que conste en alguna declaración presentada antes de la supresión que el contribuyente ya venía disfrutando del beneficio.
 
-Si compró su vivienda antes de 2013 pero nunca declaró la deducción —por ejemplo, porque no le salía a pagar o simplemente la desconocía—, **no puede empezar a aplicarla ahora**. El derecho quedó vinculado al uso efectivo previo.
+Si compró su vivienda antes de 2013 pero nunca declaró la deducción —por ejemplo, porque no le salía a pagar o simplemente la desconocía—, **no puede empezar a aplicarla ahora**. Recuerda que la deducción se aplica en la declaración anual del IRPF; puedes revisar los [plazos y el calendario de la renta](/irpf/declaracion-renta-plazo/) para no perder la fecha límite. El derecho quedó vinculado al uso efectivo previo.
 
 ### Casos especiales dentro del régimen transitorio
 

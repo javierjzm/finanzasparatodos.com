@@ -46,7 +46,7 @@ Incluye las rentas más habituales:
 - **Imputaciones de renta**: inmuebles urbanos no arrendados (excluida la vivienda habitual).
 - **Ganancias patrimoniales** que no deriven de una transmisión: premios, subvenciones, etc.
 
-Se le aplican los **tramos progresivos generales**, que en 2025 van del 19 % al 47 % (sumando tipo estatal y autonómico estándar).
+Se le aplican los **tramos progresivos generales**, que en 2025 van del 19 % al 47 % (sumando tipo estatal y autonómico estándar). Puedes consultar la tabla completa y ejemplos por nivel de ingresos en nuestra guía de [tramos del IRPF 2025](/irpf/tramos-irpf-2025/).
 
 ### Base del ahorro
 
@@ -197,7 +197,7 @@ $$
 
 ### Paso 10 – Deducciones
 
-En este ejemplo no hay deducciones aplicables (no hay inversión en vivienda habitual anterior a 2013, ni donativos, ni deducción por maternidad).
+En este ejemplo no hay deducciones aplicables. Si compraste vivienda antes de 2013, es posible que puedas aplicar la [deducción por vivienda habitual](/deducciones/deduccion-vivienda-habitual/), que puede reducir la cuota hasta 1.356 € anuales.
 
 $$
 \text{Cuota líquida} = 9.499{,}73 \text{ €}
@@ -273,7 +273,7 @@ Sí. Las aportaciones a planes de pensiones individuales reducen la base imponib
 
 ### ¿Cuándo se presenta la declaración de la renta 2025?
 
-La campaña de la renta correspondiente al ejercicio 2025 se presentará previsiblemente entre el **2 de abril y el 30 de junio de 2026**. La Agencia Tributaria suele habilitar el servicio Renta WEB desde el inicio de la campaña, y el borrador y los datos fiscales están disponibles desde la primera semana de abril.
+La campaña de la renta correspondiente al ejercicio 2025 se presentará previsiblemente entre el **2 de abril y el 30 de junio de 2026**. Consulta todas las fechas y cómo pedir cita previa en nuestra guía de [plazos de la declaración de la renta](/irpf/declaracion-renta-plazo/).
 
 ### ¿Las criptomonedas tributan en el IRPF?
 

@@ -12,7 +12,7 @@ schema: "howto"
 
 ## ¿Qué es el modelo 130?
 
-El modelo 130 es el formulario de la Agencia Tributaria mediante el cual los trabajadores autónomos realizan el **pago fraccionado del IRPF** (Impuesto sobre la Renta de las Personas Físicas). En lugar de esperar a la declaración anual de la renta para abonar de golpe todo el impuesto correspondiente a los beneficios de la actividad económica, Hacienda exige que los autónomos vayan adelantando pagos cada trimestre.
+El modelo 130 es el formulario de la Agencia Tributaria mediante el cual los trabajadores autónomos realizan el **pago fraccionado del IRPF**. Para entender bien el impuesto sobre el que calculas estos pagos, revisa los [tramos del IRPF 2025](/irpf/tramos-irpf-2025/) (Impuesto sobre la Renta de las Personas Físicas). En lugar de esperar a la declaración anual de la renta para abonar de golpe todo el impuesto correspondiente a los beneficios de la actividad económica, Hacienda exige que los autónomos vayan adelantando pagos cada trimestre.
 
 Este mecanismo funciona como un anticipo a cuenta de la declaración de la renta. El importe ingresado trimestralmente a través del modelo 130 se descuenta después del resultado de la declaración anual del IRPF. Si a lo largo del año has pagado de más mediante estos fraccionamientos, la diferencia te será devuelta (o compensada) al presentar la renta.
 
@@ -20,7 +20,7 @@ El modelo 130 aplica exclusivamente a los autónomos que tributan en **estimaci�
 
 ## ¿Quién debe presentar el modelo 130?
 
-Están obligados a presentar el modelo 130 todos los autónomos personas físicas que realicen actividades económicas y determinen su rendimiento neto por el método de **estimación directa normal o simplificada**. Esto incluye tanto a profesionales (abogados, consultores, diseñadores, médicos, etc.) como a empresarios individuales (comerciantes, hosteleros, transportistas, etc.).
+Están obligados a presentar el modelo 130 todos los autónomos personas físicas que realicen actividades económicas y determinen su rendimiento neto por el método de **estimación directa normal o simplificada**. Recuerda que para calcular ese rendimiento neto es clave haber identificado bien tus [gastos deducibles como autónomo](/autonomos/gastos-deducibles-autonomos/). Esto incluye tanto a profesionales (abogados, consultores, diseñadores, médicos, etc.) como a empresarios individuales (comerciantes, hosteleros, transportistas, etc.).
 
 ### Exención: la regla del 70 %
 

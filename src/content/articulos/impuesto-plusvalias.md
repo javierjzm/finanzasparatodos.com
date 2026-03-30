@@ -45,7 +45,7 @@ Si vendes acciones de una misma empresa adquiridas en diferentes momentos, se ap
 
 ### Fondos de inversión
 
-Los fondos de inversión en España gozan de un régimen fiscal privilegiado: el **traspaso entre fondos** no genera tributación. Solo tributas cuando reembolsas participaciones, es decir, cuando conviertes tu inversión en dinero. La ganancia se calcula como la diferencia entre el valor de reembolso y el valor de suscripción, aplicándose también la regla FIFO.
+Los fondos de inversión en España gozan de un régimen fiscal privilegiado: el **traspaso entre fondos** no genera tributación. Puedes ver todos los detalles en nuestra guía sobre [fiscalidad de los fondos de inversión](/inversiones/fondos-inversion-fiscalidad/). Solo tributas cuando reembolsas participaciones, es decir, cuando conviertes tu inversión en dinero. La ganancia se calcula como la diferencia entre el valor de reembolso y el valor de suscripción, aplicándose también la regla FIFO.
 
 ### Inmuebles
 
@@ -122,7 +122,7 @@ Además, Pedro deberá pagar el **Impuesto sobre el Incremento de Valor de los T
 
 ## Obligaciones formales y declaración
 
-Las ganancias y pérdidas patrimoniales se declaran en la **declaración anual del IRPF** (modelo 100), que se presenta entre abril y junio del año siguiente al ejercicio fiscal. Dentro de la declaración, se incluyen en las casillas correspondientes a la base imponible del ahorro.
+Las ganancias y pérdidas patrimoniales se declaran en la **declaración anual del IRPF** (modelo 100). Consulta las [fechas exactas y cómo pedir cita previa](/irpf/declaracion-renta-plazo/) para no perder el plazo. Dentro de la declaración, se incluyen en las casillas correspondientes a la base imponible del ahorro.
 
 Para operaciones con valores cotizados, tu bróker o entidad financiera te proporcionará la información fiscal necesaria. En el caso de inmuebles, necesitarás las escrituras de compraventa y los justificantes de gastos. Para criptomonedas, deberás recopilar el historial de transacciones de los exchanges que hayas utilizado.
 

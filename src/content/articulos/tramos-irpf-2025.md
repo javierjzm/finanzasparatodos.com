@@ -17,7 +17,7 @@ El Impuesto sobre la Renta de las Personas Físicas (IRPF) es el principal tribu
 
 Una de las características fundamentales del IRPF es su **naturaleza progresiva**: quien más gana, más paga en proporción. Para conseguir esa progresividad, la ley divide la base liquidable general en tramos o escalones. A cada tramo se le aplica un tipo impositivo distinto, de forma que los primeros euros de renta tributan a un porcentaje bajo y los últimos, a uno más alto.
 
-Es un error muy frecuente creer que si tu salario "salta" de tramo pagas el tipo superior sobre toda tu renta. **No es así.** Solo se aplica el tipo más alto a la parte de la renta que excede el límite inferior de ese tramo. El resto sigue tributando a los porcentajes anteriores. Entender esta mecánica es clave para tomar decisiones financieras informadas.
+Es un error muy frecuente creer que si tu salario "salta" de tramo pagas el tipo superior sobre toda tu renta. **No es así.** Solo se aplica el tipo más alto a la parte de la renta que excede el límite inferior de ese tramo. El resto sigue tributando a los porcentajes anteriores. Entender esta mecánica es clave para tomar decisiones financieras informadas. Si quieres ver el cálculo completo paso a paso, consulta nuestra guía sobre [cómo calcular el IRPF](/irpf/como-calcular-irpf/).
 
 ## Tabla de tramos estatales del IRPF 2025
 
@@ -125,7 +125,7 @@ Antes de aplicar la escala de tramos, se resta de la base imponible el mínimo p
 
 ### Reducciones y deducciones
 
-Las **reducciones** (como las aportaciones a planes de pensiones o la reducción por rendimientos del trabajo) disminuyen la base imponible antes de aplicar los tramos. Las **deducciones** (por inversión en vivienda habitual, maternidad, donativos, etc.) se restan directamente de la cuota. Ambas son herramientas legales para optimizar tu factura fiscal.
+Las **reducciones** (como las aportaciones a planes de pensiones o la reducción por rendimientos del trabajo) disminuyen la base imponible antes de aplicar los tramos. Las **deducciones** (por inversión en vivienda habitual, maternidad, donativos, etc.) se restan directamente de la cuota. Una de las más relevantes es la [deducción por vivienda habitual](/deducciones/deduccion-vivienda-habitual/), todavía vigente para compras anteriores a 2013. Ambas son herramientas legales para optimizar tu factura fiscal.
 
 ## Preguntas frecuentes sobre los tramos del IRPF 2025
 
@@ -151,7 +151,7 @@ Sí, existen múltiples vías legales: aportar a planes de pensiones (hasta 1.50
 
 ### ¿Cómo afectan los tramos si soy autónomo?
 
-Los autónomos tributan por el mismo IRPF que los asalariados, pero sus ingresos se clasifican como rendimientos de actividades económicas. Pueden deducir los gastos necesarios para su actividad, lo que reduce la base imponible. Además, realizan pagos fraccionados trimestrales (modelo 130 o 131) a cuenta de la declaración anual.
+Los autónomos tributan por el mismo IRPF que los asalariados, pero sus ingresos se clasifican como rendimientos de actividades económicas. Pueden deducir los gastos necesarios para su actividad, lo que reduce la base imponible. Además, realizan pagos fraccionados trimestrales mediante el [modelo 130](/autonomos/modelo-130/) a cuenta de la declaración anual.
 
 ### ¿Qué pasa si tengo dos pagadores?
 

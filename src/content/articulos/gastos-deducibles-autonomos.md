@@ -37,7 +37,7 @@ Estos gastos se deducen íntegramente siempre que se cumplan los tres requisitos
 
 ### Cuotas de la Seguridad Social
 
-La cuota de autónomos que pagas mensualmente al RETA es deducible al 100 % en el IRPF. En 2025, con el sistema de cotización por ingresos reales, la cuota mínima parte de 200 € mensuales para rendimientos netos inferiores a 670 €/mes y puede superar los 500 € en tramos altos. Sea cual sea tu cuota, es gasto deducible en su totalidad.
+La cuota de autónomos que pagas mensualmente al RETA es deducible al 100 % en el IRPF. En 2025, con el [sistema de cotización por ingresos reales](/autonomos/cuota-autonomos-2025/), la cuota mínima parte de 200 € mensuales para rendimientos netos inferiores a 670 €/mes y puede superar los 500 € en tramos altos. Sea cual sea tu cuota, es gasto deducible en su totalidad.
 
 ### Material de oficina y consumibles
 
@@ -130,7 +130,7 @@ Supongamos un autónomo diseñador gráfico con unos rendimientos íntegros (ing
 
 **Rendimiento neto:** 40.000 € − 13.587 € = 26.413 €
 
-Si este autónomo no dedujera ningún gasto, tributaría sobre 40.000 €. Con un tipo marginal estimado del 30 % (tramo de IRPF entre 20.200 € y 35.200 €), el ahorro aproximado es:
+Si este autónomo no dedujera ningún gasto, tributaría sobre 40.000 €. Con un tipo marginal estimado del 30 % (consulta la [tabla de tramos del IRPF 2025](/irpf/tramos-irpf-2025/) para ver exactamente qué porcentaje aplica en cada nivel de ingresos), el ahorro aproximado es:
 
 **13.587 € × 30 % = 4.076 € de ahorro en IRPF**
 
@@ -160,7 +160,7 @@ Deducir 50 € diarios de comida en España cuando el límite es 26,67 € sin p
 
 ### 6. No declarar el uso parcial de la vivienda
 
-Muchos autónomos que trabajan desde casa no comunican a Hacienda (modelo 036/037) qué porcentaje de la vivienda está afecto a la actividad, y luego deducen gastos. Sin esta declaración censal previa, la deducción puede ser rechazada.
+Muchos autónomos que trabajan desde casa no comunican a Hacienda (modelo 036/037) qué porcentaje de la vivienda está afecto a la actividad. Recuerda además que, si presentas el [modelo 130](/autonomos/modelo-130/) cada trimestre, todos los gastos deducibles que incluyas aquí reducen directamente el pago fraccionado del IRPF, y luego deducen gastos. Sin esta declaración censal previa, la deducción puede ser rechazada.
 
 ## Preguntas frecuentes
 

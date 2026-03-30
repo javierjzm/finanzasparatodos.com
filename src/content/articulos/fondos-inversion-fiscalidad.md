@@ -14,13 +14,13 @@ schema: "faq"
 
 Los fondos de inversión son uno de los vehículos de ahorro más populares en España, y buena parte de su éxito se debe a un tratamiento fiscal que los distingue de casi cualquier otro producto financiero. Para entender su fiscalidad es imprescindible distinguir dos momentos clave: **el traspaso entre fondos** y **el reembolso** (rescate parcial o total).
 
-Mientras mantienes tu dinero invertido dentro de un fondo —o lo mueves de un fondo a otro mediante traspaso— la Agencia Tributaria no interviene. Solo cuando retiras efectivo, es decir, cuando se produce un reembolso, nace la obligación de tributar. La ganancia o pérdida obtenida se clasifica como **ganancia o pérdida patrimonial** y se integra en la **base del ahorro** del IRPF, sujeta a los tramos que veremos más adelante.
+Mientras mantienes tu dinero invertido dentro de un fondo —o lo mueves de un fondo a otro mediante traspaso— la Agencia Tributaria no interviene. Solo cuando retiras efectivo, es decir, cuando se produce un reembolso, nace la obligación de tributar. La ganancia o pérdida obtenida se clasifica como **ganancia o pérdida patrimonial** y se integra en la **base del ahorro** del IRPF, sujeta a los tramos que veremos más adelante. Para conocer cómo tributan otros activos como acciones o inmuebles, consulta nuestra guía sobre el [impuesto de plusvalías en España](/inversiones/impuesto-plusvalias/).
 
 ## La gran ventaja fiscal: el traspaso entre fondos (diferimiento fiscal)
 
 El artículo 94 de la Ley 35/2006 del IRPF establece el llamado **régimen de diferimiento fiscal** para los traspasos entre instituciones de inversión colectiva (IIC). En términos prácticos significa lo siguiente:
 
-- Si vendes participaciones de un fondo de inversión y con el importe resultante suscribes participaciones de otro fondo, **no se produce tributación alguna** en ese momento.
+- Si vendes participaciones de un fondo de inversión y con el importe resultante suscribes participaciones de otro fondo, **no se produce tributación alguna** en ese momento. Es una ventaja que no tienen, por ejemplo, las acciones individuales, que tributan en el momento de la venta según los [tramos de la base del ahorro del IRPF](/irpf/tramos-irpf-2025/).
 - Las nuevas participaciones conservan el **valor y la fecha de adquisición** de las antiguas, de modo que el beneficio fiscal no desaparece: simplemente se aplaza hasta el día en que finalmente reembolses a efectivo.
 
 Este mecanismo permite al inversor **cambiar de estrategia, gestor o tipo de activo** sin coste fiscal. Puedes pasar de un fondo de renta variable global a uno de renta fija a corto plazo —o viceversa— tantas veces como consideres oportuno, y mientras no saques el dinero del circuito de fondos, Hacienda no se lleva nada.

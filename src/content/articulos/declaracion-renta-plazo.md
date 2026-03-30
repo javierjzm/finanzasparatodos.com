@@ -12,7 +12,7 @@ schema: "faq"
 
 ## Campaña de la renta 2024-2025: todas las fechas que necesitas conocer
 
-Cada año, millones de contribuyentes en España deben presentar la declaración del Impuesto sobre la Renta de las Personas Físicas (IRPF). La campaña de la renta 2024-2025 —en la que se declaran las rentas obtenidas durante el ejercicio fiscal 2024— sigue un calendario perfectamente definido por la Agencia Tributaria. Conocerlo a fondo te permitirá planificar con tiempo, evitar agobios de última hora y, sobre todo, ahorrarte recargos y sanciones innecesarios.
+Cada año, millones de contribuyentes en España deben presentar la declaración del Impuesto sobre la Renta de las Personas Físicas (IRPF). Si aún no sabes cómo se calcula lo que te sale a pagar o a devolver, consulta nuestra guía de [cómo calcular el IRPF paso a paso](/irpf/como-calcular-irpf/). La campaña de la renta 2024-2025 —en la que se declaran las rentas obtenidas durante el ejercicio fiscal 2024— sigue un calendario perfectamente definido por la Agencia Tributaria. Conocerlo a fondo te permitirá planificar con tiempo, evitar agobios de última hora y, sobre todo, ahorrarte recargos y sanciones innecesarios.
 
 ## Calendario oficial de la campaña de la renta 2024-2025
 
@@ -34,7 +34,7 @@ El 2 de abril de 2025 se abre el plazo para que cualquier contribuyente presente
 - **Cl@ve PIN**: sistema de identificación basado en un PIN de un solo uso que se solicita desde la app o la web de Cl@ve.
 - **Número de referencia**: se obtiene con el importe de la casilla 505 de la declaración del ejercicio anterior y tu NIF. Se puede generar desde la propia web de la Agencia Tributaria o desde la app.
 
-Renta Web te ofrece un **borrador** con los datos fiscales que la Agencia Tributaria ya tiene: rendimientos del trabajo comunicados por tu empleador, intereses bancarios, datos del catastro, etc. Revisa siempre este borrador con atención, ya que puede no reflejar deducciones autonómicas, alquiler de vivienda, aportaciones a planes de pensiones, cuotas sindicales u otros gastos deducibles que debes incorporar tú manualmente.
+Renta Web te ofrece un **borrador** con los datos fiscales que la Agencia Tributaria ya tiene: rendimientos del trabajo comunicados por tu empleador, intereses bancarios, datos del catastro, etc. Revísalo bien: el borrador no suele incluir las deducciones autonómicas ni la [deducción por vivienda habitual](/deducciones/deduccion-vivienda-habitual/) si tienes derecho a ella. Revisa siempre este borrador con atención, ya que puede no reflejar deducciones autonómicas, alquiler de vivienda, aportaciones a planes de pensiones, cuotas sindicales u otros gastos deducibles que debes incorporar tú manualmente.
 
 ### Fase 2: atención telefónica (desde el 6 de mayo)
 
