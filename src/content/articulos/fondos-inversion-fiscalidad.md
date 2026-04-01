@@ -1,14 +1,31 @@
 ---
-title: "Fiscalidad de los fondos de inversión en España 2025"
-description: "Cómo tributan los fondos de inversión en España: ventaja del traspaso, cuándo se paga, diferencia con ETFs y ejemplos de ahorro fiscal."
+title: "Fiscalidad de los fondos de inversión en España 2026"
+description: "Cómo tributan los fondos de inversión en España: ventaja del traspaso sin tributar, reembolso, diferencia fiscal con ETFs y ejemplos de ahorro real."
 category: "inversiones"
-keywords: ["fiscalidad fondos inversion", "traspaso fondos sin tributar", "impuestos fondos inversion", "fondos inversion vs etf fiscalidad", "tributacion fondos 2025"]
+keywords:
+  - fiscalidad fondos inversion
+  - traspaso fondos sin tributar
+  - impuestos fondos inversion
+  - fondos inversion vs etf fiscalidad
+  - tributacion fondos 2026
+  - diferimiento fiscal fondos
+  - fondos indexados fiscalidad españa
+  - reembolso fondos inversion irpf
+  - como tributan fondos inversion
+  - ventaja fiscal fondos vs etf
 datePublished: 2025-02-25
-dateModified: 2025-02-25
+dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
-relatedPosts: ["impuesto-plusvalias", "tramos-irpf-2025"]
+relatedPosts:
+  - impuesto-plusvalias
+  - tramos-irpf-2025
+  - impuestos-andorra-guia-completa
 schema: "faq"
 ---
+
+Los fondos de inversión tienen en España una de las ventajas fiscales más potentes del sistema tributario: el **diferimiento fiscal en el traspaso**. Puedes cambiar de estrategia, de gestora o de tipo de activo cuantas veces quieras sin pagar un solo euro a Hacienda, siempre que el dinero no salga del circuito de fondos. Esta guía explica en detalle cómo tributan los fondos de inversión, cuándo sí pagas impuestos, qué diferencia hay con los ETFs y cómo aprovechar al máximo las ventajas fiscales disponibles en 2026.
+
+Si estás valorando si invertir en España o en otros países con menor presión fiscal, nuestra [calculadora fiscal España vs Andorra](/calculadora-fiscal/) te permite comparar la carga impositiva sobre rentas de capital al instante.
 
 ## ¿Cómo tributan los fondos de inversión en España?
 
@@ -51,7 +68,7 @@ La ganancia resultante tributa dentro de la **base del ahorro** del IRPF, aplica
 | De 200.000,01 € a 300.000 € | 27 % |
 | Más de 300.000 € | 28 % |
 
-Estos tramos son progresivos y se aplican por franjas, no sobre el total. Por ejemplo, si tu ganancia patrimonial es de 60.000 €, los primeros 6.000 € tributan al 19 %, los siguientes 44.000 € al 21 % y los últimos 10.000 € al 23 %.
+Estos tramos son progresivos y se aplican por franjas, no sobre el total. Por ejemplo, si tu ganancia patrimonial es de 60.000 €, los primeros 6.000 € tributan al 19 %, los siguientes 44.000 € al 21 % y los últimos 10.000 € al 23 %. La tributación de las plusvalías en el ahorro difiere según el país; si te interesa **cómo encajan estas ganancias en una comparación con Andorra**, prueba nuestra [calculadora de impuestos España frente a Andorra](/calculadora-fiscal/).
 
 ### Retención a cuenta
 

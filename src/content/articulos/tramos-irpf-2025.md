@@ -2,9 +2,26 @@
 title: "Tramos del IRPF 2025: tabla actualizada y cómo calcular lo que pagas"
 description: "Consulta los tramos del IRPF 2025 actualizados, con tabla estatal, comparativa autonómica y ejemplos de cuánto se paga con salarios de 30.000 a 120.000 €."
 category: "irpf"
-keywords: ["tramos irpf 2025", "tabla irpf 2025", "tipos irpf", "cuanto pago de irpf", "tramos renta 2025"]
+keywords:
+  - tramos irpf 2025
+  - tabla irpf 2025
+  - tipos irpf 2026
+  - cuanto pago de irpf
+  - tramos renta 2025 2026
+  - irpf por comunidad autonoma
+  - tipo marginal irpf
+  - tramos base liquidable irpf
 datePublished: 2025-01-15
-dateModified: 2025-01-15
+dateModified: 2026-03-30
+faqs:
+  - q: "¿Cuántos tramos tiene el IRPF en España?"
+    a: "El IRPF estatal tiene 6 tramos: 9,5 % hasta 12.450 €; 12 % de 12.450 € a 20.200 €; 15 % de 20.200 € a 35.200 €; 18,5 % de 35.200 € a 60.000 €; 22,5 % de 60.000 € a 300.000 €; y 24,5 % a partir de 300.000 €. A esto se suma la tarifa autonómica, que varía según la comunidad de residencia."
+  - q: "¿Si subo de tramo del IRPF pago más por todo el salario?"
+    a: "No. El IRPF es progresivo: el tipo más alto solo se aplica a la parte de la renta que supera el límite inferior del tramo, no sobre el total. Si ganas 25.000 €, los primeros 12.450 € tributan al 9,5 %, los siguientes 7.750 € al 12 % y solo los últimos 4.800 € al 15 %."
+  - q: "¿Cuál es la diferencia entre tipo marginal y tipo efectivo del IRPF?"
+    a: "El tipo marginal es el porcentaje que se aplica al último euro ganado (el del tramo más alto en que tributa). El tipo efectivo es el porcentaje real que supone el impuesto total sobre la renta bruta. Siempre es inferior al marginal. Por ejemplo, con 50.000 € brutos en Madrid, el tipo marginal puede ser del 37 % pero el efectivo real puede ser del 24 %."
+  - q: "¿Cómo varía el IRPF según la comunidad autónoma?"
+    a: "Cada comunidad autónoma tiene su propia tarifa autonómica del IRPF. Madrid tiene los tipos autonómicos más bajos de España (desde 8,5 % hasta 20,5 %); Cataluña y Extremadura, los más altos (llegando hasta el 25,5 %). La diferencia puede suponer varios miles de euros al año para rentas medias-altas."
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["como-calcular-irpf", "declaracion-renta-plazo"]
@@ -48,7 +65,7 @@ España tiene un sistema de financiación autonómica que permite a las comunida
 - **Comunidad Valenciana** mantiene una escala autonómica con un tipo marginal máximo combinado cercano al 48 %, siendo una de las comunidades con mayor presión fiscal en rentas altas.
 - **País Vasco** (Bizkaia, Gipuzkoa y Araba) opera bajo normativa foral propia. Sus tramos y tipos son distintos a los del régimen común: la escala va desde el 23 % hasta el 49 % para rentas superiores a 190.890 €, con menos tramos y una estructura diferente.
 
-La diferencia entre vivir en una u otra comunidad puede suponer varios cientos —o miles— de euros al año, especialmente en rentas medias-altas.
+La diferencia entre vivir en una u otra comunidad puede suponer varios cientos —o miles— de euros al año, especialmente en rentas medias-altas. En el conjunto de la OCDE, España suele aparecer entre los países con tipos marginales más elevados sobre rentas altas; si quieres **comparar tu carga fiscal con Andorra** en una estimación orientativa, puedes usar nuestra [calculadora fiscal](/calculadora-fiscal/).
 
 ## Ejemplos prácticos: cuánto se paga según tu salario bruto
 

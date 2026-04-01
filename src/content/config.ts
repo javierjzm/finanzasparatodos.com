@@ -22,6 +22,7 @@ const articulos = defineCollection({
     pillar: z.boolean().default(false),
     relatedPosts: z.array(z.string()).default([]),
     schema: z.enum(['article', 'faq', 'howto']).default('article'),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),
 });
 

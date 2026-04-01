@@ -1,134 +1,120 @@
 ---
-title: "Opciones de inversión para particulares en España y fiscalidad (2026)"
-description: "Depósitos, fondos, planes, bolsa y brókers online en España: opciones para particulares y fiscalidad en el IRPF. Contexto informativo sobre Trade Republic."
+title: "Cómo invertir en España 2026: guía de opciones para particulares"
+description: "Depósitos, fondos, ETFs, planes de pensiones y brókeres online en España: opciones, fiscalidad en el IRPF y cómo elegir según tu perfil. 2026."
 category: "inversiones"
 keywords:
-  [
-    "invertir en españa particular",
-    "opciones inversion ahorro",
-    "trade republic españa fiscalidad",
-    "donde invertir dinero españa",
-    "fiscalidad inversiones irpf",
-    "brokers online españa particulares",
-  ]
-datePublished: 2026-03-31
-dateModified: 2026-04-01
+  - como invertir en españa
+  - opciones inversion particulares españa
+  - donde invertir dinero españa 2026
+  - trade republic españa fiscalidad
+  - fondos inversion etf españa
+  - plan de pensiones irpf
+  - brokers online españa
+  - fiscalidad inversiones irpf
+  - mejores inversiones españa 2026
+  - invertir siendo extranjero en españa
+  - depositos remunerados españa
+  - neobrokers españa fiscalidad
+datePublished: 2026-03-30
+dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["fondos-inversion-fiscalidad", "impuesto-plusvalias", "tramos-irpf-2025"]
 schema: "faq"
 ---
 
-Antes de elegir **dónde poner el dinero**, conviene separar dos ideas: **ahorrar** (preservar valor con poco riesgo) e **invertir** (asumir volatilidad a cambio de rentabilidad esperable a largo plazo). En España, un particular dispone de un abanico amplio de productos regulados; la **fiscalidad** depende del tipo de renta (intereses, dividendos, ganancias de enajenación) y casi siempre se integra en el **IRPF**, en la **base del ahorro** o en **rendimientos del capital mobiliario**. Los plazos y modelos oficiales se publican en la [Agencia Tributaria (AEAT)](https://www.agenciatributaria.es/); el marco legal del IRPF está en la [Ley 35/2006, del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) (BOE). Este artículo es **meramente informativo** y no constituye recomendación personalizada de inversión.
+España ofrece un abanico amplio de productos de inversión regulados para particulares: desde depósitos bancarios y fondos de inversión hasta planes de pensiones, ETFs y brókeres digitales. La **fiscalidad** de cada opción depende del tipo de renta —intereses, dividendos o ganancias patrimoniales— y en la mayoría de los casos se integra en la **base del ahorro del IRPF**. Esta guía resume las principales opciones, cómo tributan y qué factores hay que tener en cuenta para elegir.
 
-## Panorama: qué puede invertir (o ahorrar) un particular en España
+Si ya tienes clara la fiscalidad básica y quieres comparar la carga impositiva con la de otros países, puedes usar nuestra [calculadora fiscal España vs otros países](/calculadora-fiscal/).
 
-La siguiente tabla resume **vehículos habituales**, nivel de riesgo orientativo y pista fiscal muy resumida. Los tipos del ahorro los detallamos en la guía de [tramos del IRPF y base del ahorro](/irpf/tramos-irpf-2025/).
+## Ahorro conservador: depósitos y cuentas remuneradas
 
-| Vehículo | Riesgo orientativo | Fiscalidad resumida (IRPF) |
-| --- | --- | --- |
-| Cuenta corriente / depósito a plazo | Bajo | Intereses como rendimientos del capital mobiliario |
-| Fondos de inversión (IIC) | Variable | Ganancia al reembolso en base del ahorro; traspasos entre fondos pueden diferir el pago |
-| Planes de pensiones | Variable | Deducción en aportación (límites); tributación al rescate como renta del trabajo/ahorro según modalidad |
-| Acciones y ETFs (bolsa) | Alto | Plusvalías y dividendos; ETFs cotizados no suelen tener traspaso fiscal como los fondos |
-| Bonos y renta fija | Medio / variable | Intereses y ganancias al vencimiento o venta según caso |
-| Brókeres online (p. ej. neobrokers UE) | Depende del activo | Misma fiscalidad española si eres residente fiscal: lo gravable es el rendimiento, no la marca del bróker |
+Los **depósitos a plazo** y las **cuentas remuneradas** ofrecen rentabilidad baja con riesgo muy reducido. Los depósitos en bancos españoles están protegidos por el [Fondo de Garantía de Depósitos](https://www.fgd.es/) (FGD) hasta 100.000 € por titular y entidad.
 
-Para profundizar en **fondos** y el **traspaso fiscal**, consulta la guía sobre la [fiscalidad de los fondos de inversión en España](/inversiones/fondos-inversion-fiscalidad/). Para **plusvalías, dividendos y escalas** de la base del ahorro, resulta útil el artículo del [impuesto sobre las plusvalías y la base del ahorro](/inversiones/impuesto-plusvalias/).
+**Fiscalidad:** los intereses son **rendimientos del capital mobiliario** y tributan en la base del ahorro del IRPF: 19 % hasta 6.000 €, 21 % entre 6.000 € y 50.000 €, 23 % entre 50.000 € y 200.000 €, y así sucesivamente. La entidad bancaria aplica una **retención del 19 %** en el momento del abono.
 
-## 1. Ahorro conservador: depósitos y cuentas remuneradas
+Son adecuados para el **fondo de emergencia** o para dinero que puedas necesitar en menos de 2 años. A largo plazo, su rentabilidad raramente supera la inflación.
 
-Los **depósitos a plazo** y las **cuentas remuneradas** ofrecen tipos de interés acordados o variables según mercado. El riesgo de contraparte depende de la entidad (banco, cooperativa, etc.). En España, los depósitos en entidades adheridas cuentan con el [Fondo de Garantía de Depósitos (FGD)](https://www.fgd.es/); el [Banco de España explica el alcance de la garantía de depósitos](https://www.bde.es/wbe/es/secciones/publico/Garantia-de-depositos/) para particulares. Fiscalmente, los **intereses** constituyen normalmente **rendimientos del capital mobiliario** sujetos a retención; se declaran en la renta y se integran con el resto de rentas del ahorro y trabajo según corresponda. La AEAT publica información sobre el [IRPF y la renta](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/IRPF.html) en su sede electrónica.
+## Fondos de inversión: la ventaja del diferimiento fiscal
 
-Sirven sobre todo para **fondo de emergencia** o objetivos a muy corto plazo, no suelen batir a largo plazo la inflación ni generar rentabilidad real elevada.
+Los **fondos de inversión** (IIC) son el producto estrella para el inversor particular a largo plazo en España, principalmente por una ventaja fiscal que no tiene ningún otro producto: el **diferimiento en el traspaso**.
 
-## 2. Fondos de inversión y carteras diversificadas
+Mientras el dinero permanezca dentro del circuito de fondos —aunque cambies de fondo, de gestora o de estrategia—, Hacienda no interviene. Solo cuando retiras dinero en efectivo (reembolso) nace la obligación de tributar. Esto permite **reinvertir íntegramente la rentabilidad** y beneficiarse del interés compuesto sin pérdidas fiscales intermedias.
 
-Los **fondos de inversión** españoles o europeos (IIC) permiten delegar la gestión o seguir índices con **diversificación** y tickets de entrada accesibles. La [CNMV](https://www.cnmv.es/) supervisa los mercados de valores en España y ofrece material para [inversores](https://www.cnmv.es/Portal/Inversores.aspx). Su ventaja fiscal destacada es el posible **diferimiento** mediante **traspasos** entre fondos, sin convertir en efectivo (véase el artículo 94 y normas de desarrollo de la [Ley del IRPF en el BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764)). Al **rescatar** a efectivo, la ganancia o pérdida patrimonial entra en la **base del ahorro**.
+Cuando reembolsas, la ganancia tributa como **ganancia patrimonial** en la base del ahorro. El método de cálculo sigue el criterio **FIFO** (primero en entrar, primero en salir). Para todos los detalles del régimen fiscal, consulta la guía de [fiscalidad de los fondos de inversión](/inversiones/fondos-inversion-fiscalidad/).
 
-## 3. Planes de pensiones y productos de previsión
+**Quién lo usa:** inversores con horizonte de 5+ años que quieren flexibilidad de estrategia sin coste fiscal.
 
-Los **planes de pensiones** y otros instrumentos de previsión ofrecen **deducción en la base imponible** del IRPF dentro de los **límites legales** de cada ejercicio (consulta cada año la [información oficial del IRPF en la Sede de la AEAT](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/IRPF.html)), a cambio de **liquidez restringida** hasta el rescate, con tributación en el momento y forma que marque la normativa. Son un complemento del ahorro a largo plazo, no sustituto de fondo de emergencia.
+## Planes de pensiones: deducción inmediata, tributación diferida
 
-## 4. Bolsa: acciones, ETFs y autocartera
+Los **planes de pensiones** ofrecen una deducción en la **base general del IRPF** en el año de la aportación. El límite es el menor entre el 30 % de los rendimientos del trabajo y de actividades económicas, o **1.500 € anuales** (con posibilidad de ampliar si el cónyuge aporta y si el promotor es la empresa).
 
-Comprar **acciones** o **ETFs** en mercados regulados implica asumir **volatilidad**. Los **dividendos** tributan como rendimientos del capital mobiliario; las **ventas** generan ganancias o pérdidas patrimoniales en la **base del ahorro**. Los **ETFs cotizados** en bolsa, en la práctica habitual de compraventa en mercado secundario, **no** se benefician del mismo régimen de traspaso entre fondos que las IIC con reembolso al partícipe (como explicamos en la guía de [fondos frente a ETFs](/inversiones/fondos-inversion-fiscalidad/)). En la Unión Europea, la normativa de servicios de inversión para minoristas se enmarca en [MiFID II / MiFIR](https://www.esma.europa.eu/policy-rules/mifid-ii-and-mifir), supervisada entre otros por la CNMV en España.
+La contrapartida es la **iliquidez**: el dinero queda bloqueado hasta la jubilación, incapacidad, fallecimiento o —desde 2025— tras 10 años desde la aportación. Al rescatar, la cantidad obtenida tributa como **rendimientos del trabajo** (base general), lo que puede suponer tipos más altos que la base del ahorro.
 
-## 5. Brókeres online y Trade Republic: qué son y qué implica fiscalmente
+**Quién lo usa:** personas con marginal alto en activo que buscan reducir su cuota del IRPF actual y tienen disciplina para no necesitar ese dinero durante décadas.
 
-Muchos particulares operan a través de **brókeres** con app o web, incluidos los llamados **neobrokers** con sede en la Unión Europea. **Trade Republic** es un ejemplo de **entidad de inversión** que ofrece acceso a renta variable, ETFs y otros productos según su catálogo; opera bajo supervisión en Alemania por la [BaFin](https://www.bafin.de/EN/Homepage/homepage_node.html) y comercializa en varios países, entre ellos España, en el marco de normativa de servicios de inversión y pasaporte europeo. Las **condiciones, riesgos y documentación precontractual** deben consultarse en la [web oficial de Trade Republic](https://traderepublic.com/es-es/) (o la versión vigente para tu país). La [CNMV](https://www.cnmv.es/Portal/Inversores.aspx) publica advertencias y guías para inversores minoristas.
+## Bolsa: acciones y ETFs
 
-**Puntos informativos relevantes:**
+Comprar **acciones** directamente en bolsa o a través de **ETFs** cotizados implica asumir la volatilidad del mercado. Los rendimientos tributan así:
 
-- **Custodia y extractos:** las posiciones aparecen en la cuenta del bróker; para la **declaración de la renta** en España necesitarás **movimientos, dividendos y enajenaciones** del ejercicio. Las entidades suelen facilitar informes anuales, pero la **responsabilidad** de declarar correctamente es del contribuyente.
-- **Fiscalidad:** si eres **residente fiscal en España**, las ganancias y dividendos obtenidos a través de Trade Republic o cualquier otro bróker **se declaran en España** con las mismas reglas generales del IRPF (base del ahorro, retenciones cuando proceda según operación y normativa). El hecho de que el bróker sea extranjero **no exime** de tributar aquí.
-- **Comisiones y productos:** comisiones, instrumentos disponibles y condiciones **cambian** con frecuencia; conviene contrastar siempre la **información oficial** del proveedor.
+- **Dividendos:** rendimientos del capital mobiliario en la base del ahorro (retención del 19 %).
+- **Ganancias por venta:** ganancias patrimoniales en la base del ahorro. La ganancia se calcula como `precio de venta − precio de compra`.
+- **ETFs cotizados:** a diferencia de los fondos de inversión tradicionales, los ETFs que se compran y venden en bolsa **no se benefician del régimen de traspaso**. Cada venta es un hecho imponible. La única excepción son los ETFs inscritos en la CNMV que permiten reembolso directo con la gestora, pero la oferta es muy limitada.
 
-**Finanzas Guías no mantiene relación comercial con Trade Republic** ni con ningún bróker citado; la mención responde a la frecuente consulta de los lectores sobre este tipo de plataformas.
+Para ver en detalle los tramos y un ejemplo numérico de cómo se calculan las plusvalías, visita el artículo del [impuesto de plusvalías en España](/inversiones/impuesto-plusvalias/).
 
-## 6. Otros productos (con cautela)
+## Brókeres online y neobrókeres: Trade Republic y similares
 
-Existen **crowdfunding**, **crowdlending** o productos **estructurados** con perfiles de riesgo y liquidez muy distintos. Las **criptomonedas** y criptoactivos conllevan riesgo elevado y advertencias reiteradas de supervisores; la CNMV ha difundido [comunicados y avisos sobre criptoactivos](https://www.cnmv.es/Portal/Consultas/ComunicadosCNMV.aspx) dirigidos al público. Tributan con reglas específicas y pueden generar obligaciones informativas; si operas con ellas, conviene documentar cada operación y, ante dudas, acudir a un asesor. No forman parte del núcleo de productos “tradicionales” de la mayoría de particulares conservadores o moderados.
+Los **brókeres digitales** o neobrókeres —entre los más conocidos en España, **Trade Republic** (supervisado por la BaFin alemana), Scalable Capital, Interactive Brokers o eToro— ofrecen acceso a acciones, ETFs, bonos y otros instrumentos con comisiones reducidas.
 
-## Ejemplo práctico: reparto orientativo y lectura fiscal
+**Lo que cambia con un bróker extranjero:**
+- La **fiscalidad no cambia**: si eres residente fiscal en España, tributas en España por todas tus rentas con independencia de dónde esté el bróker.
+- Las **retenciones** pueden ser diferentes: algunos brókeres extranjeros no aplican retención a cuenta del IRPF español o lo hacen de forma parcial, por lo que deberás asegurarte de declarar correctamente en la Renta.
+- La **documentación**: solicita siempre el informe fiscal anual al bróker (ganancias, pérdidas, dividendos cobrados). Es tu responsabilidad declarar correctamente, no del bróker.
+- **Modelo 720**: si el valor total de tus activos en cuentas o valores en el extranjero supera los 50.000 €, estás obligado a presentar el Modelo 720 (declaración de bienes en el extranjero).
 
-Imagina a **Lucía**, residente en España, con **12.000 €** que quiere separar entre **liquidez**, **inversión media plazo** y **largo plazo fiscalmente incentivada**:
+Trade Republic, en concreto, también ofrece una cuenta de ahorro remunerada. Los intereses de esa cuenta tributan igual que cualquier interés bancario: como rendimientos del capital mobiliario en la base del ahorro.
 
-| Tramo | Importe | Uso orientativo |
-| --- | --- | --- |
-| Liquidez | 3.000 € | Cuenta o depósito a corto plazo (imprevistos) |
-| Inversión indexada | 6.000 € | Fondo diversificado o cartera de ETFs según su tolerancia al riesgo |
-| Previsión | 3.000 € | Aportación a plan de pensiones dentro del límite deducible del ejercicio |
+## Ejemplo práctico: tres perfiles inversores
 
-Si al cabo del año vende ETFs con una **plusvalía** de **800 €**, esa ganancia se integrará en la **base del ahorro** con los tipos escalonados vigentes (consulta la [tabla de la base del ahorro](/inversiones/impuesto-plusvalias/)). Los **intereses** de un depósito se declararán como **rendimientos del capital mobiliario**. Las **aportaciones al plan de pensiones** se reflejarán en la parte de deducciones dentro de los topes legales.
+| Perfil | Horizonte | Opción principal | Por qué |
+|--------|-----------|-----------------|---------|
+| Conservador | 1-2 años | Depósito o cuenta remunerada | Seguridad y liquidez; asume que la rentabilidad real puede ser mínima |
+| Crecimiento | 10+ años | Fondo indexado diversificado | Diferimiento fiscal en traspasos, bajas comisiones, disciplina de largo plazo |
+| Optimización fiscal | 20+ años | Plan de pensiones (si tiene alto marginal) + fondo indexado | Combina deducción inmediata con diferimiento en la parte de fondos |
 
-Los importes son un **ejemplo numérico ilustrativo**; la decisión de inversión depende de la situación personal, horizonte temporal y perfil de riesgo de cada persona.
+Lucía, 35 años, salario de 42.000 € brutos en Madrid, tiene 15.000 € que quiere invertir:
+
+| Tramo | Importe | Uso |
+|-------|---------|-----|
+| Emergencias | 3.000 € | Cuenta remunerada |
+| Inversión a largo | 9.000 € | Fondo indexado global |
+| Pensión | 3.000 € | Aportación al plan de pensiones (reduce base ~990 € de cuota) |
+
+Si en el año vende ETFs con una plusvalía de 600 €, esa ganancia tributa al 19 % (114 €) en la base del ahorro.
 
 ## Preguntas frecuentes
 
 ### ¿Es lo mismo invertir con un banco español que con Trade Republic a efectos de Hacienda?
 
-Para un **residente fiscal en España**, la obligación tributaria principal se determina por las **rentas obtenidas** (dividendos, intereses, plusvalías), no por la nacionalidad del bróker. Las **retenciones** y la **documentación** que recibas pueden variar según la entidad y el tipo de activo, pero la **integración en el IRPF** sigue la normativa española.
+Para un residente fiscal en España, sí en cuanto a la obligación tributaria: las mismas reglas del IRPF se aplican con independencia de dónde esté el bróker. La diferencia puede estar en si el bróker aplica retención a cuenta del IRPF español o no, y en la documentación que recibes para declarar.
 
-### ¿Los ETFs de un bróker online tributan igual que los fondos de inversión españoles?
+### ¿Los ETFs de un bróker online tributan igual que los fondos de inversión?
 
-En la forma habitual de **comprar y vender ETFs en bolsa**, cada venta puede generar **ganancia o pérdida patrimonial** en el ejercicio, sin el **diferimiento por traspaso** entre fondos que tienen muchas IIC. Los **fondos** con reembolso al inversor pueden permitir **traspasos** fiscalmente neutros entre fondos; los detalles están en nuestra guía de [fiscalidad de fondos](/inversiones/fondos-inversion-fiscalidad/).
+No. Los ETFs cotizados en bolsa —la forma habitual de operar con un neobrókerhno tienen el régimen de traspaso sin tributar que sí tienen los fondos de inversión. Cada venta de ETF genera ganancia o pérdida patrimonial en el ejercicio. Los detalles están en la [guía de fiscalidad de fondos vs ETFs](/inversiones/fondos-inversion-fiscalidad/).
 
-### ¿Qué es más seguro: depósito o fondo de inversión?
+### ¿Qué es más seguro: un depósito o un fondo de inversión?
 
-El **depósito** en entidad regulada, dentro de los límites de garantía de depósitos aplicables, se asocia a **riesgo de crédito bajo** y tipo fijo o variable conocido. Un **fondo** invierte en mercados y puede **perder valor**; el riesgo depende de la cartera. “Seguridad” financiera y “seguridad jurídica” no son lo mismo: ambos productos pueden ser **regulados** y tener distinto perfil de riesgo económico.
+Depende de qué entiendes por "seguridad". El depósito en banco regulado tiene riesgo de crédito muy bajo y garantía del FGD hasta 100.000 €. Un fondo puede perder valor según los mercados; su "seguridad" depende de la cartera en la que invierte. Ambos son productos regulados con diferente perfil de riesgo económico.
 
-### ¿Debo declarar una cuenta en Trade Republic si solo tengo acciones sin vender?
+### ¿Debo declarar mis acciones en Trade Republic si no he vendido nada?
 
-Como **residente en España**, debes declarar las **rentas** que generes (p. ej. dividendos) y las **ganancias** en ventas. Las **posesiones** en el extranjero pueden tener implicaciones en el [**modelo 720**](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/declaraciones-informativas/modelo-720/declaracion-informativa-modelo-720.html) (declaración informativa sobre bienes en el extranjero) u otras obligaciones informativas si superas los **umbrales legales**; los límites y exclusiones dependen de la normativa vigente en cada ejercicio y de la [información actualizada en la AEAT](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/declaraciones-informativas.html).
+Si no has tenido rentas (dividendos, intereses ni ventas), no hay nada que declarar en el IRPF por esas posiciones. Sin embargo, si el valor total de tus activos en el extranjero supera los 50.000 €, tienes obligación de presentar el Modelo 720 con carácter informativo.
 
-### ¿Tiene sentido un plan de pensiones si quiero invertir en bolsa “a mano”?
+### ¿Tiene sentido combinar ETFs y un plan de pensiones?
 
-No son excluyentes. El **plan de pensiones** aporta **ventaja fiscal en la aportación** y **menos liquidez** hasta el rescate. La **bolsa directa** ofrece flexibilidad y tributación al vender. Muchas personas combinan **ambos** según objetivos y plazos.
+Sí. Son complementarios: el plan de pensiones reduce tu cuota del IRPF hoy (ventaja en activo) pero tributa como renta del trabajo al rescate. Los ETFs o fondos tributan a los tipos más bajos de la base del ahorro al vender. La combinación óptima depende de tu marginal actual, el esperado en la jubilación y tu necesidad de liquidez.
 
-### ¿Trade Republic sustituye al asesor financiero?
+### ¿Puede un extranjero invertir en España?
 
-No. Una **app de bróker** ejecuta órdenes y ofrece información comercial; **no** sustituye un **plan financiero integral** ni asesoramiento fiscal personalizado. Ante situaciones complejas (patrimonio elevado, residencia fiscal dudosa, sucesiones), conviene un **asesor fiscal o financiero** regulado.
-
-### ¿Qué diferencia hay entre “invertir en cripto” y en fondos tradicionales?
-
-La **volatilidad**, la **regulación** y la **fiscalidad** difieren sensiblemente. Los productos tradicionales regulados en UE (fondos, acciones en mercados supervisados) encajan en un marco [CNMV](https://www.cnmv.es/) / [MiFID II](https://www.esma.europa.eu/policy-rules/mifid-ii-and-mifir) más estandarizado para el inversor retail. Las criptoactivos conllevan **obligaciones declarativas** específicas y riesgo operativo adicional; consulta siempre la normativa y los formularios en la [Sede electrónica de la AEAT](https://sede.agenciatributaria.gob.es/).
-
-### ¿Con cuánto dinero se puede “empezar” a invertir?
-
-No hay mínimo legal universal: depende del **producto** (algunos fondos admiten aportaciones bajas; algunos brókers tienen mínimos simbólicos). Lo relevante es **no invertir** dinero que necesites a corto plazo y **entender** comisiones, riesgo y fiscalidad antes de contratar.
-
-## Enlaces útiles a fuentes oficiales y reguladores
-
-| Tema | Enlace |
-| --- | --- |
-| IRPF, calendarios y sede electrónica | [Agencia Tributaria (AEAT)](https://www.agenciatributaria.gob.es/) · [Sede electrónica — IRPF](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/IRPF.html) |
-| Ley del IRPF (texto legal) | [Ley 35/2006, de 28 de noviembre (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) |
-| Mercados de valores e inversores en España | [CNMV — Portal del inversor](https://www.cnmv.es/Portal/Inversores.aspx) |
-| Garantía de depósitos (España) | [FGD](https://www.fgd.es/) · [Banco de España — Garantía de depósitos](https://www.bde.es/wbe/es/secciones/publico/Garantia-de-depositos/) |
-| Supervisión prudencial (Alemania), referencia Trade Republic | [BaFin](https://www.bafin.de/EN/Homepage/homepage_node.html) |
-| Marco MiFID II / MiFIR (UE) | [ESMA — MiFID II y MiFIR](https://www.esma.europa.eu/policy-rules/mifid-ii-and-mifir) |
-| Declaración informativa bienes en el extranjero | [AEAT — Modelo 720](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/declaraciones-informativas/modelo-720/declaracion-informativa-modelo-720.html) |
-| Comunicados CNMV (incl. criptoactivos) | [CNMV — Comunicados](https://www.cnmv.es/Portal/Consultas/ComunicadosCNMV.aspx) |
-
-Las condiciones comerciales de brókeres y entidades deben verificarse siempre en la **documentación precontractual y contractual** actualizada de cada proveedor. Los enlaces externos pueden cambiar de URL; si alguno falla, usa el buscador del sitio oficial correspondiente.
+Sí. No hay restricciones para que ciudadanos de la UE o de países con convenio de doble imposición con España abran cuentas en bancos españoles o brókeres regulados. Si estableces tu residencia fiscal en España, tributarás aquí por tu renta mundial. Puedes ver cómo afecta esto a tu carga impositiva total en nuestra [calculadora fiscal](/calculadora-fiscal/).

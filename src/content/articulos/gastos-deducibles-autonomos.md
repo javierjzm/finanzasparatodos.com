@@ -4,7 +4,7 @@ description: "Lista completa de gastos deducibles para autónomos en España en 
 category: "autonomos"
 keywords: ["gastos deducibles autonomos", "que gastos puede deducirse un autonomo", "gastos deducibles irpf autonomos", "deducciones autonomos 2025"]
 datePublished: 2025-02-01
-dateModified: 2025-02-01
+dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["cuota-autonomos-2025", "modelo-130"]

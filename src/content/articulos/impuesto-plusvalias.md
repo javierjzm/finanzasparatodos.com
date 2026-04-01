@@ -2,9 +2,27 @@
 title: "Impuesto sobre las plusvalías en España 2025: tipos y cómo tributar las ganancias"
 description: "Cómo tributan las plusvalías en España en 2025: tipos impositivos de la base del ahorro, compensación de pérdidas, ejemplos prácticos y preguntas frecuentes."
 category: "inversiones"
-keywords: ["impuesto plusvalias", "plusvalias acciones", "tributacion ganancias patrimoniales", "base del ahorro irpf", "tipos plusvalias 2025"]
+keywords:
+  - impuesto plusvalias
+  - plusvalias acciones
+  - tributacion ganancias patrimoniales
+  - base del ahorro irpf
+  - tipos plusvalias 2026
+  - como tributan las acciones en españa
+  - compensacion perdidas patrimoniales
+  - plusvalias fondos inversion
+  - plusvalias criptomonedas irpf
 datePublished: 2025-02-05
-dateModified: 2025-02-05
+dateModified: 2026-03-30
+faqs:
+  - q: "¿Qué tipo impositivo se aplica a las plusvalías en España en 2026?"
+    a: "Las ganancias patrimoniales tributan en la base del ahorro del IRPF con tipos progresivos: 19 % hasta 6.000 €; 21 % de 6.000 € a 50.000 €; 23 % de 50.000 € a 200.000 €; 27 % de 200.000 € a 300.000 €; y 28 % a partir de 300.000 €."
+  - q: "¿Se pueden compensar pérdidas con ganancias patrimoniales?"
+    a: "Sí. Las pérdidas patrimoniales (por venta de acciones, fondos, criptomonedas, inmuebles) se pueden compensar con las ganancias del mismo ejercicio. Si el saldo sigue siendo negativo, se puede compensar con hasta el 25 % de los rendimientos positivos del capital mobiliario (intereses, dividendos) y el resto se arrastra 4 años."
+  - q: "¿Cuánto tiempo hay que tener un activo para que la plusvalía sea a largo plazo?"
+    a: "En España no existe una distinción fiscal entre plusvalías a corto y largo plazo. Todas las ganancias derivadas de la transmisión de elementos patrimoniales —independientemente del período de tenencia— tributan en la base del ahorro a los mismos tipos progresivos."
+  - q: "¿Cómo tributan las criptomonedas en España?"
+    a: "Las ganancias por venta de criptomonedas se consideran ganancias patrimoniales y tributan en la base del ahorro del IRPF a los mismos tipos que las acciones (19-28 %). Desde 2023 existe también obligación de informar de los saldos en criptomonedas mediante el Modelo 721."
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["fondos-inversion-fiscalidad", "tramos-irpf-2025"]
@@ -33,7 +51,7 @@ Las ganancias patrimoniales derivadas de la transmisión de elementos patrimonia
 
 Estos tipos se aplican de forma **progresiva**, no proporcional. Esto significa que si obtienes una ganancia patrimonial de 60.000 €, no pagas el 23 % sobre todo el importe. En su lugar, los primeros 6.000 € tributan al 19 %, los siguientes 44.000 € (de 6.000 a 50.000) al 21 %, y los 10.000 € restantes (de 50.000 a 60.000) al 23 %.
 
-Este esquema progresivo es relevante para la planificación fiscal, ya que concentrar muchas ventas en un solo ejercicio puede hacer que parte de las ganancias escale a tramos superiores.
+Este esquema progresivo es relevante para la planificación fiscal, ya que concentrar muchas ventas en un solo ejercicio puede hacer que parte de las ganancias escale a tramos superiores. Para situar esta carga en contexto y **ver una estimación aproximada frente a otro sistema vecino**, puedes recurrir a la [comparación fiscal con Andorra](/calculadora-fiscal/).
 
 ## Activos que generan plusvalías
 
