@@ -89,6 +89,18 @@ Consulta siempre estas fuentes antes de publicar datos fiscales:
 | País Vasco | [ogasun.ejgv.euskadi.eus](https://www.ogasun.ejgv.euskadi.eus) |
 | Galicia | [atriga.gal](https://www.atriga.gal) |
 
+## Enlaces a fuentes externas
+
+En artículos YMYL (fiscalidad, inversión), enlaza siempre que puedas a **fuentes oficiales** (AEAT, BOE, CNMV, Banco de España, FGD, ESMA, reguladores del producto). Al final del artículo conviene una sección o tabla de **“Enlaces útiles”** con URLs estables. Comprueba periódicamente que no den 404.
+
+## Imágenes (SEO y AdSense)
+
+- **SEO:** Las imágenes **relevantes** (gráficos, tablas exportadas como PNG, esquemas) pueden mejorar la **experiencia de lectura** y el tiempo en página; usa **`alt` descriptivo** en HTML (en Markdown Astro suele ser `![descripción clara del contenido](ruta)`). No sustituyen un buen texto ni enlaces a fuentes oficiales.
+- **AdSense:** Google **no exige** imágenes para aprobar o mostrar anuncios. Imágenes propias o con **licencia clara** evitan problemas de copyright; las genéricas de bancos de fotos muy repetidas aportan poco.
+- **Rendimiento:** Peso contenido (`public/` o optimizadas), formatos modernos (WebP/AVIF si tu flujo lo permite) y no saturar la página con archivos enormes (Core Web Vitals).
+
+Si no aportan valor real al artículo, **mejor ninguna imagen** que relleno decorativo.
+
 ## Regla de oro
 
 **Nunca publiques un tramo, porcentaje o plazo fiscal sin verificar la fuente oficial donde se puede comprobar.** Cuando sea posible, enlaza directamente a la página de la AEAT o el BOE donde aparece el dato.

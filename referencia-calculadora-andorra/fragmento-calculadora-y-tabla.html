@@ -1,0 +1,186 @@
+<!--
+  Extraído de fiscalandorra.ad/index.html (secciones #calculadora y #comparativa).
+  Los IDs y la estructura deben conservarse si se reutiliza calculadora.js tal cual.
+  Cargar antes i18n.js (opcional pero recomendado para etiquetas) y después calculadora.js.
+-->
+<section class="app" id="calculadora">
+  <div class="container-wide">
+    <div class="app-layout">
+      <div class="app-center">
+        <div class="inputs-bar">
+          <div class="input-row-salary">
+            <label for="salary-input" data-i18n="lbl_salary">Sou brut anual</label>
+            <div class="slider-combo">
+              <input type="range" id="salary-slider" min="0" max="1000" value="350" step="1" aria-label="Sueldo bruto anual">
+              <div class="input-euro">
+                <input type="number" id="salary-input" min="0" max="500000" value="50000" step="500">
+                <span class="euro">€</span>
+              </div>
+            </div>
+          </div>
+          <div class="input-selects">
+            <div class="input-mini">
+              <label data-i18n="lbl_country">El teu país</label>
+              <div class="custom-select" id="pais-dropdown">
+                <input type="hidden" id="pais" value="espana">
+                <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                  <svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="480" fill="#c60b1e"/><rect y="120" width="640" height="240" fill="#ffc400"/></svg>
+                  <span class="custom-select-text">España</span>
+                  <svg class="select-arrow" viewBox="0 0 12 7" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <ul class="custom-select-options" role="listbox" tabindex="-1">
+                  <li role="option" data-value="espana" class="selected">
+                    <svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="480" fill="#c60b1e"/><rect y="120" width="640" height="240" fill="#ffc400"/></svg>
+                    España
+                  </li>
+                  <li role="option" data-value="francia">
+                    <svg class="flag-icon" viewBox="0 0 640 480"><rect width="213" height="480" fill="#002654"/><rect x="213" width="214" height="480" fill="#fff"/><rect x="427" width="213" height="480" fill="#ce1126"/></svg>
+                    Francia
+                  </li>
+                  <li role="option" data-value="portugal">
+                    <svg class="flag-icon" viewBox="0 0 640 480"><rect width="256" height="480" fill="#006600"/><rect x="256" width="384" height="480" fill="#ff0000"/><circle cx="256" cy="240" r="64" fill="#ff0"/></svg>
+                    Portugal
+                  </li>
+                  <li role="option" data-value="italia">
+                    <svg class="flag-icon" viewBox="0 0 640 480"><rect width="213" height="480" fill="#009246"/><rect x="213" width="214" height="480" fill="#fff"/><rect x="427" width="213" height="480" fill="#ce2b37"/></svg>
+                    Italia
+                  </li>
+                  <li role="option" data-value="alemania">
+                    <svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="160" fill="#000"/><rect y="160" width="640" height="160" fill="#d00"/><rect y="320" width="640" height="160" fill="#ffce00"/></svg>
+                    Alemania
+                  </li>
+                  <li role="option" data-value="uk">
+                    <svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="480" fill="#012169"/><path d="M0 0l640 480M640 0L0 480" stroke="#fff" stroke-width="80"/><path d="M0 0l640 480M640 0L0 480" stroke="#C8102E" stroke-width="52"/><path d="M320 0v480M0 240h640" stroke="#fff" stroke-width="120"/><path d="M320 0v480M0 240h640" stroke="#C8102E" stroke-width="72"/></svg>
+                    Reino Unido
+                  </li>
+                  <li role="option" data-value="rusia">
+                    <svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="160" fill="#fff"/><rect y="160" width="640" height="160" fill="#0039a6"/><rect y="320" width="640" height="160" fill="#d52b1e"/></svg>
+                    Rusia
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="input-mini" id="ccaa-wrapper">
+              <label for="comunidad" data-i18n="lbl_ccaa">Comunitat</label>
+              <select id="comunidad">
+                <option value="madrid" selected>Madrid</option>
+                <option value="cataluna">Cataluña</option>
+                <option value="andalucia">Andalucía</option>
+                <option value="valencia">C. Valenciana</option>
+                <option value="galicia">Galicia</option>
+                <option value="castilla-leon">Castilla y León</option>
+                <option value="pais-vasco">País Vasco</option>
+                <option value="canarias">Canarias</option>
+                <option value="castilla-mancha">Castilla-La Mancha</option>
+                <option value="murcia">R. de Murcia</option>
+                <option value="aragon">Aragón</option>
+                <option value="extremadura">Extremadura</option>
+                <option value="baleares">Islas Baleares</option>
+                <option value="asturias">Asturias</option>
+                <option value="navarra">Navarra</option>
+                <option value="cantabria">Cantabria</option>
+                <option value="rioja">La Rioja</option>
+              </select>
+            </div>
+            <div class="input-mini">
+              <label for="situacion" data-i18n="lbl_situation">Situació</label>
+              <select id="situacion">
+                <option value="soltero" selected data-i18n="opt_single">Solter/a</option>
+                <option value="casado-0" data-i18n="opt_married0">Casat/da sense fills</option>
+                <option value="casado-1" data-i18n="opt_married1">Casat/da 1 fill</option>
+                <option value="casado-2" data-i18n="opt_married2">Casat/da 2+ fills</option>
+              </select>
+            </div>
+            <div class="input-mini input-mini-pills">
+              <label data-i18n="lbl_income">Tipus de renda</label>
+              <div class="pill-group">
+                <input type="radio" id="renta-asalariado" name="tipo-renta" value="asalariado" checked>
+                <label for="renta-asalariado" data-i18n="pill_employee">Assalariat</label>
+                <input type="radio" id="renta-autonomo" name="tipo-renta" value="autonomo">
+                <label for="renta-autonomo" data-i18n="pill_self">Autònom</label>
+                <input type="radio" id="renta-dividendos" name="tipo-renta" value="dividendos">
+                <label for="renta-dividendos" data-i18n="pill_capital">Capital</label>
+              </div>
+            </div>
+          </div>
+          <details class="patrimonio-toggle">
+            <summary data-i18n="lbl_patrimony">Patrimoni net</summary>
+            <div class="slider-combo">
+              <input type="range" id="patrimony-slider" min="0" max="5000000" value="0" step="10000" aria-label="Patrimonio neto">
+              <div class="input-euro">
+                <input type="number" id="patrimony-input" min="0" max="5000000" value="0" step="10000">
+                <span class="euro">€</span>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="savings-banner">
+          <div class="savings-label" data-i18n="savings_label">Estalviaries a Andorra</div>
+          <div class="savings-amount" id="ahorro-anual">7.695 €<span class="savings-per" data-i18n="savings_year">/any</span></div>
+          <div class="savings-sub"><span id="ahorro-mensual">641 €</span><span data-i18n="savings_month">/mes</span> &middot; <span id="ahorro-5">38.475 €</span> <span data-i18n="savings_5y">en 5 anys</span> &middot; <span id="ahorro-10">76.950 €</span> <span data-i18n="savings_10y">en 10 anys</span></div>
+        </div>
+        <div class="comparison">
+          <div class="country-card card-origin">
+            <div class="country-header">
+              <span id="origin-flag" aria-hidden="true"><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#c60b1e"/><rect y="5" width="30" height="10" fill="#ffc400"/></svg></span>
+              <span class="country-name" id="origin-name">España</span>
+              <span class="country-neto" id="origin-neto">37.805 €</span>
+            </div>
+            <div class="tax-bar">
+              <div class="tax-bar-fill" id="origin-bar" style="width:24%; background:#E63946"></div>
+            </div>
+            <div class="country-detail">
+              <div class="detail-row"><span id="origin-ss-label" data-i18n="card_ss">Seg. Social</span><span id="origin-ss">-3.235 €</span></div>
+              <div class="detail-row"><span id="origin-irpf-label" data-i18n="card_irpf">IRPF</span><span id="origin-irpf">-8.960 €</span></div>
+              <div class="detail-row" id="origin-ip-row" style="display:none"><span data-i18n="card_ip">I. Patrimoni</span><span id="origin-ip">0 €</span></div>
+              <div class="detail-row tipo"><span data-i18n="card_effective">Tipus efectiu</span><span id="origin-tipo">24,4%</span></div>
+            </div>
+          </div>
+          <div class="country-card card-andorra">
+            <div class="country-header">
+              <svg viewBox="0 0 30 20" aria-hidden="true"><rect x="0" width="10" height="20" fill="#10069f"/><rect x="10" width="10" height="20" fill="#fedd00"/><rect x="20" width="10" height="20" fill="#d50032"/></svg>
+              <span class="country-name">Andorra</span>
+              <span class="country-neto" id="ad-neto">45.500 €</span>
+            </div>
+            <div class="tax-bar">
+              <div class="tax-bar-fill tax-bar-ad" id="ad-bar" style="width:9%"></div>
+            </div>
+            <div class="country-detail">
+              <div class="detail-row"><span data-i18n="card_cass">CASS</span><span id="ad-cass">-3.000 €</span></div>
+              <div class="detail-row"><span data-i18n="card_irpf">IRPF</span><span id="ad-irpf">-1.500 €</span></div>
+              <div class="detail-row"><span data-i18n="card_ip">I. Patrimoni</span><span>0 €</span></div>
+              <div class="detail-row tipo"><span data-i18n="card_effective">Tipus efectiu</span><span id="ad-tipo">9,0%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="comparativa" id="comparativa">
+  <div class="container">
+    <h2 data-i18n="tbl_title">Comparativa ràpida: Espanya vs Andorra</h2>
+    <p data-i18n="tbl_subtitle">Estimació per a assalariat solter, residència a Madrid. No inclou cost de vida.</p>
+    <div class="table-scroll">
+      <table class="tabla-comparativa">
+        <thead>
+          <tr>
+            <th data-i18n="tbl_gross">Brut</th>
+            <th data-i18n="tbl_net_es">Net Espanya</th>
+            <th data-i18n="tbl_net_ad">Net Andorra</th>
+            <th data-i18n="tbl_saving_yr">Estalvi/any</th>
+            <th data-i18n="tbl_saving_10">Estalvi 10a</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>30.000 €</td><td class="col-espana">24.050 €</td><td class="col-andorra">27.990 €</td><td class="col-ahorro">3.940 €</td><td class="col-ahorro">39.400 €</td></tr>
+          <tr><td>50.000 €</td><td class="col-espana">37.805 €</td><td class="col-andorra">45.500 €</td><td class="col-ahorro">7.695 €</td><td class="col-ahorro">76.950 €</td></tr>
+          <tr><td>80.000 €</td><td class="col-espana">57.100 €</td><td class="col-andorra">70.880 €</td><td class="col-ahorro">13.780 €</td><td class="col-ahorro">137.800 €</td></tr>
+          <tr><td>120.000 €</td><td class="col-espana">81.550 €</td><td class="col-andorra">104.720 €</td><td class="col-ahorro">23.170 €</td><td class="col-ahorro">231.700 €</td></tr>
+          <tr><td>200.000 €</td><td class="col-espana">130.350 €</td><td class="col-andorra">172.400 €</td><td class="col-ahorro">42.050 €</td><td class="col-ahorro">420.500 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
