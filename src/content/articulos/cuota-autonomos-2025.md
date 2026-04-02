@@ -4,7 +4,7 @@ description: "Tabla completa de la cuota de autónomos 2025 por tramos de ingres
 category: "autonomos"
 keywords: ["cuota autonomos 2025", "tabla autonomos ingresos reales", "cotizacion autonomos 2025", "base cotizacion autonomos", "cuanto paga un autonomo"]
 datePublished: 2025-01-25
-dateModified: 2025-01-25
+dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["gastos-deducibles-autonomos", "modelo-130"]
@@ -147,6 +147,8 @@ Por este motivo resulta fundamental hacer **previsiones realistas** de tus ingre
 3. **Valora cotizar por encima de la base mínima** si puedes permitírtelo. Tus prestaciones por jubilación, incapacidad temporal y cese de actividad mejorarán significativamente.
 4. **Revisa tu tramo cada dos meses.** Los seis periodos de cambio están pensados precisamente para que te adaptes a la realidad de tu negocio.
 5. **Consulta con un asesor fiscal.** El sistema tiene matices (autónomos societarios, pluriactividad, bonificaciones por conciliación) que conviene analizar caso por caso.
+
+Recuerda que la cuota del RETA se suma al IRPF y al resto de tributos: la carga total del autónomo puede variar mucho según el nivel de ingresos. Para **comparar de forma orientativa tus impuestos como autónomo con un supuesto equivalente en Andorra**, puedes usar nuestra [simulación España vs. Andorra](/calculadora-fiscal/).
 
 ## Preguntas frecuentes (FAQ)
 

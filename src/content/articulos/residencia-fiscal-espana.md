@@ -4,7 +4,7 @@ description: "Residencia fiscal en España: regla de 183 días, núcleo de inter
 category: "fiscalidad-internacional"
 keywords: ["residencia fiscal españa", "183 dias residencia fiscal", "doble imposicion españa", "tributacion no residente", "convenio doble imposicion"]
 datePublished: 2025-03-01
-dateModified: 2025-03-01
+dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["tramos-irpf-2025", "impuesto-plusvalias"]
@@ -172,7 +172,7 @@ El documento clave es el **certificado de residencia fiscal** emitido por la aut
 
 ### ¿Qué ocurre si me hago residente fiscal en Andorra o Portugal?
 
-El traslado es perfectamente legal, pero debes cumplir los requisitos reales de residencia en el nuevo país y dejar de cumplir los criterios de residencia en España. Hacienda vigila especialmente estos cambios: si mantienes tu actividad económica, tus activos principales o tu familia en España, podrá considerar que el traslado es ficticio y seguirá tratándote como residente fiscal español. Además, la Ley del IRPF prevé un **"exit tax"** (artículo 95 bis) para contribuyentes con participaciones significativas o valores superiores a 4.000.000 € que trasladen su residencia fuera de España.
+El traslado es perfectamente legal, pero debes cumplir los requisitos reales de residencia en el nuevo país y dejar de cumplir los criterios de residencia en España. Antes de tomar decisiones, puede ayudarte una primera cifra orientativa: en la [comparadora de fiscalidad entre España y Andorra](/calculadora-fiscal/) puedes estimar diferencias aproximadas de impuestos y cotizaciones entre ambos marcos. Hacienda vigila especialmente estos cambios: si mantienes tu actividad económica, tus activos principales o tu familia en España, podrá considerar que el traslado es ficticio y seguirá tratándote como residente fiscal español. Además, la Ley del IRPF prevé un **"exit tax"** (artículo 95 bis) para contribuyentes con participaciones significativas o valores superiores a 4.000.000 € que trasladen su residencia fuera de España.
 
 ### ¿Tengo que declarar mis criptomonedas en el extranjero en el Modelo 720?
 

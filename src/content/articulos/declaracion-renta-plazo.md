@@ -4,7 +4,7 @@ description: "Fechas clave de la declaración de la renta 2024-2025: inicio, cit
 category: "irpf"
 keywords: ["declaracion renta 2025 plazo", "cuando empieza la renta 2025", "fecha declaracion renta", "plazo renta 2025", "cita previa renta"]
 datePublished: 2025-02-15
-dateModified: 2025-02-15
+dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 relatedPosts: ["tramos-irpf-2025", "como-calcular-irpf"]
 schema: "faq"

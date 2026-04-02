@@ -4,7 +4,7 @@ description: "Guía completa del modelo 130: pago fraccionado del IRPF para aut�
 category: "autonomos"
 keywords: ["modelo 130", "pago fraccionado irpf", "modelo 130 autonomos", "como rellenar modelo 130", "plazo modelo 130"]
 datePublished: 2025-02-20
-dateModified: 2025-02-20
+dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 relatedPosts: ["cuota-autonomos-2025", "gastos-deducibles-autonomos"]
 schema: "howto"

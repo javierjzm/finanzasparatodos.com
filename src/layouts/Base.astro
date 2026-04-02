@@ -56,7 +56,12 @@ const orgSchema = {
   '@type': 'Organization',
   name: siteName,
   url: 'https://finanzasguias.com',
-  logo: 'https://finanzasguias.com/logo.png',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://finanzasguias.com/favicon.svg',
+    width: 512,
+    height: 512,
+  },
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'hola@finanzasguias.com',
@@ -105,8 +110,11 @@ const orgSchema = {
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
   <link rel="canonical" href={canonical} />
-  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  <link rel="alternate" type="application/rss+xml" title="Finanzas Guías — RSS" href="https://finanzasguias.com/rss.xml" />
+  {noindex ? <meta name="robots" content="noindex, nofollow" /> : <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />}
 
   <!-- Open Graph -->
   <meta property="og:title" content={title} />
@@ -157,6 +165,7 @@ const orgSchema = {
         <a href="/inversiones/">Inversiones</a>
         <a href="/deducciones/">Deducciones</a>
         <a href="/fiscalidad-internacional/">Internacional</a>
+        <a href="/calculadora-fiscal/" class="nav-calc-link">Comparador fiscal</a>
         <form action="/buscar/" method="get" class="nav-search-form" role="search">
           <input
             type="search"
@@ -176,6 +185,7 @@ const orgSchema = {
 
   <footer class="site-footer">
     <div class="footer-links">
+      <a href="/calculadora-fiscal/">Calculadora fiscal</a>
       <a href="/sobre-nosotros/">Sobre nosotros</a>
       <a href="/politica-privacidad/">Privacidad</a>
       <a href="/aviso-legal/">Aviso legal</a>

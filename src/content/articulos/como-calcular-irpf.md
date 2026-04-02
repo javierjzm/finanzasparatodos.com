@@ -2,9 +2,26 @@
 title: "Cómo calcular el IRPF paso a paso (con ejemplos 2025)"
 description: "Aprende a calcular el IRPF paso a paso: base imponible, reducciones, mínimo personal, cuota íntegra y deducciones. Ejemplo completo para un salario de 45.000 €."
 category: "irpf"
-keywords: ["calcular irpf", "como calcular irpf", "calculo irpf 2025", "base imponible irpf", "ejemplo calculo renta"]
+keywords:
+  - calcular irpf
+  - como calcular irpf 2026
+  - calculo irpf paso a paso
+  - base imponible irpf
+  - ejemplo calculo renta
+  - cuota integra irpf
+  - minimo personal irpf
+  - retenciones irpf nomina
 datePublished: 2025-01-20
-dateModified: 2025-01-20
+dateModified: 2026-03-30
+faqs:
+  - q: "¿Cuál es la diferencia entre base imponible y base liquidable del IRPF?"
+    a: "La base imponible es el total de rentas del contribuyente (trabajo, capital, actividades económicas) menos los gastos deducibles. La base liquidable es el resultado de restar a la base imponible las reducciones permitidas (por planes de pensiones, por rendimientos del trabajo, etc.). Es sobre la base liquidable sobre la que se aplican los tramos del IRPF."
+  - q: "¿Qué es el mínimo personal y familiar del IRPF?"
+    a: "El mínimo personal y familiar es la cantidad de renta que queda exenta de tributación porque se considera necesaria para cubrir las necesidades básicas. El mínimo personal general es de 5.550 € (puede aumentar para mayores de 65 años). Si tienes hijos o ascendientes a cargo, se añaden mínimos adicionales."
+  - q: "¿Por qué la retención del trabajo no coincide con el IRPF final?"
+    a: "La retención en nómina es una estimación del impuesto anual dividida entre las pagas. Si al hacer la declaración de la renta el cálculo definitivo da menos de lo retenido, Hacienda te devuelve la diferencia; si da más, tendrás que pagar. Las deducciones, cambios en la situación familiar o ingresos adicionales explican las diferencias."
+  - q: "¿Cuándo compensa hacer la declaración de la renta conjunta?"
+    a: "La declaración conjunta puede convenir cuando uno de los cónyuges tiene rentas muy bajas o nulas. La reducción por tributación conjunta es de 3.400 € para matrimonios (o 2.150 € para familias monoparentales). Conviene comparar ambas opciones con un simulador antes de presentar."
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["tramos-irpf-2025", "declaracion-renta-plazo"]
@@ -209,7 +226,7 @@ $$
 \text{Tipo efectivo} = \frac{9.499{,}73}{45.000} \times 100 = 21{,}11\%
 $$
 
-Esto significa que, de los 45.000 € brutos, el contribuyente paga aproximadamente **9.500 €** en concepto de IRPF, lo que equivale a un tipo medio efectivo del **21,11 %**, muy por debajo del tipo marginal máximo que le aplica (37 %).
+Esto significa que, de los 45.000 € brutos, el contribuyente paga aproximadamente **9.500 €** en concepto de IRPF, lo que equivale a un tipo medio efectivo del **21,11 %**, muy por debajo del tipo marginal máximo que le aplica (37 %). Ese tipo efectivo resume la presión del IRPF sobre el bruto; si quieres situarlo frente a otro escenario cercano, la [herramienta de comparación fiscal España–Andorra](/calculadora-fiscal/) te permite contrastar de forma aproximada ambos sistemas.
 
 ### Paso 12 – Cuota diferencial
 

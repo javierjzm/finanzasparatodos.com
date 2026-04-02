@@ -16,6 +16,7 @@ interface Props {
   headings: { depth: number; slug: string; text: string }[];
   relatedSlugs?: string[];
   schema?: 'article' | 'faq' | 'howto';
+  faqs?: { q: string; a: string }[];
 }
 
 const {
@@ -28,6 +29,7 @@ const {
   headings,
   relatedSlugs = [],
   schema = 'article',
+  faqs = [],
 } = Astro.props;
 
 const categoryNames: Record<string, string> = {
@@ -63,11 +65,27 @@ const articleSchema = {
   '@type': 'Article',
   headline: title,
   description,
-  author: { '@type': 'Organization', name: author },
+  image: {
+    '@type': 'ImageObject',
+    url: 'https://finanzasguias.com/og-default.png',
+    width: 1200,
+    height: 630,
+  },
+  author: {
+    '@type': 'Person',
+    name: author,
+    url: 'https://finanzasguias.com/sobre-nosotros/',
+  },
   publisher: {
     '@type': 'Organization',
     name: 'Finanzas Guías',
     url: 'https://finanzasguias.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://finanzasguias.com/favicon.svg',
+      width: 512,
+      height: 512,
+    },
   },
   datePublished: datePublished.toISOString(),
   dateModified: (dateModified || datePublished).toISOString(),
@@ -75,7 +93,35 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': Astro.url.href,
   },
+  inLanguage: 'es-ES',
 };
+
+const faqSchema = faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+} : null;
+
+const howtoHeadings = schema === 'howto'
+  ? headings.filter((h) => h.depth === 2).map((h, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: h.text,
+      url: `${Astro.url.href}#${h.slug}`,
+    }))
+  : [];
+
+const howtoSchema = schema === 'howto' && howtoHeadings.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: title,
+  description,
+  step: howtoHeadings,
+} : null;
 ---
 
 <Base title={`${title} | Finanzas Guías`} description={description}>
@@ -127,6 +173,8 @@ const articleSchema = {
   <AdSlot slot="anchor-mobile" size="anchor" mobileOnly />
 
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {howtoSchema && <script type="application/ld+json" set:html={JSON.stringify(howtoSchema)} />}
   <script is:inline>
     (function () {
       var anchor = document.getElementById('in-content-ad-anchor');
