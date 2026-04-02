@@ -10,13 +10,31 @@ interface Props {
   noindex?: boolean;
 }
 
+const SITE_ORIGIN = 'https://finanzasguias.com';
+
+/** Evita http y rutas sin / final: reduce errores de redirección en Google. */
+function normalizeCanonical(href: string): string {
+  try {
+    const u = new URL(href);
+    let path = u.pathname;
+    if (path !== '/' && !path.endsWith('/')) path += '/';
+    return `${SITE_ORIGIN}${path}`;
+  } catch {
+    return href;
+  }
+}
+
 const {
   title,
   description,
-  canonical = Astro.url.href,
+  canonical: canonicalProp,
   ogImage = '/og-default.png',
   noindex = false,
 } = Astro.props;
+
+const canonical = canonicalProp
+  ? normalizeCanonical(canonicalProp)
+  : normalizeCanonical(Astro.url.href);
 
 const siteName = 'Finanzas Guías';
 
@@ -139,7 +157,7 @@ const orgSchema = {
         <a href="/inversiones/">Inversiones</a>
         <a href="/deducciones/">Deducciones</a>
         <a href="/fiscalidad-internacional/">Internacional</a>
-        <form action="/buscar" method="get" class="nav-search-form" role="search">
+        <form action="/buscar/" method="get" class="nav-search-form" role="search">
           <input
             type="search"
             name="q"
@@ -158,11 +176,11 @@ const orgSchema = {
 
   <footer class="site-footer">
     <div class="footer-links">
-      <a href="/sobre-nosotros">Sobre nosotros</a>
-      <a href="/politica-privacidad">Privacidad</a>
-      <a href="/aviso-legal">Aviso legal</a>
-      <a href="/politica-cookies">Cookies</a>
-      <a href="/contacto">Contacto</a>
+      <a href="/sobre-nosotros/">Sobre nosotros</a>
+      <a href="/politica-privacidad/">Privacidad</a>
+      <a href="/aviso-legal/">Aviso legal</a>
+      <a href="/politica-cookies/">Cookies</a>
+      <a href="/contacto/">Contacto</a>
     </div>
     <p>&copy; {new Date().getFullYear()} finanzasguias.com. Todos los derechos reservados.</p>
     <p class="footer-disclaimer">Contenido informativo. No constituye asesoramiento fiscal, legal ni financiero personalizado.</p>

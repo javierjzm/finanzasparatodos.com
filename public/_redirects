@@ -1,0 +1,2 @@
+# Cloudflare Pages: una sola redirección http → https (ayuda a Googlebot)
+http://finanzasguias.com/*  https://finanzasguias.com/:splat  301
