@@ -10,6 +10,7 @@ interface Props {
   title: string;
   description: string;
   category: string;
+  canonical?: string;
   datePublished: Date;
   dateModified?: Date;
   author?: string;
@@ -23,6 +24,7 @@ const {
   title,
   description,
   category,
+  canonical,
   datePublished,
   dateModified,
   author = 'Equipo editorial de Finanzas Guías',
@@ -36,6 +38,7 @@ const categoryNames: Record<string, string> = {
   irpf: 'IRPF',
   autonomos: 'Autónomos',
   inversiones: 'Inversiones',
+  cripto: 'Criptomonedas',
   deducciones: 'Deducciones',
   'fiscalidad-internacional': 'Fiscalidad Internacional',
 };
@@ -44,10 +47,17 @@ const categoryLabel = categoryNames[category] || category;
 const pubDate = datePublished.toISOString().split('T')[0];
 const modDate = dateModified ? dateModified.toISOString().split('T')[0] : null;
 
+/** Canonical del artículo alineada con trailingSlash y og:url (evita @id distinto del canonical). */
+const siteBase = Astro.site?.href ?? 'https://finanzasguias.com/';
+const pathNormalized = Astro.url.pathname.endsWith('/')
+  ? Astro.url.pathname
+  : `${Astro.url.pathname}/`;
+const articlePageUrl = new URL(pathNormalized, siteBase).href;
+
 const breadcrumbItems = [
   { label: 'Inicio', href: '/' },
   { label: categoryLabel, href: `/${category}/` },
-  { label: title, href: Astro.url.pathname },
+  { label: title, href: pathNormalized },
 ];
 
 const allArticles = await getCollection('articulos');
@@ -65,6 +75,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: title,
   description,
+  url: articlePageUrl,
   image: {
     '@type': 'ImageObject',
     url: 'https://finanzasguias.com/og-default.png',
@@ -91,7 +102,7 @@ const articleSchema = {
   dateModified: (dateModified || datePublished).toISOString(),
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': Astro.url.href,
+    '@id': articlePageUrl,
   },
   inLanguage: 'es-ES',
 };
@@ -111,7 +122,7 @@ const howtoHeadings = schema === 'howto'
       '@type': 'HowToStep',
       position: i + 1,
       name: h.text,
-      url: `${Astro.url.href}#${h.slug}`,
+      url: `${articlePageUrl}#${h.slug}`,
     }))
   : [];
 
@@ -124,30 +135,61 @@ const howtoSchema = schema === 'howto' && howtoHeadings.length > 0 ? {
 } : null;
 ---
 
-<Base title={`${title} | Finanzas Guías`} description={description}>
+<Base
+  title={`${title} | Finanzas Guías`}
+  description={description}
+  canonical={canonical ?? articlePageUrl}
+  ogType="article"
+  articlePublishedTime={datePublished.toISOString()}
+  articleModifiedTime={(dateModified || datePublished).toISOString()}
+  articleAuthor={author}
+>
   <div class="article-layout">
     <div class="article-main">
       <Breadcrumb items={breadcrumbItems} />
 
       <AdSlot slot="top-banner" size="banner" />
 
-      <h1 class="article-title">{title}</h1>
+      <header class="article-header">
+        <a class="article-category-pill" href={`/${category}/`}>{categoryLabel}</a>
+        <h1 class="article-title">{title}</h1>
+        <p class="article-lead">
+          {description}
+        </p>
+        <div class="article-meta" role="group" aria-label="Datos de publicación">
+          <span class="article-meta__item">
+            <span class="article-meta__key">Publicado</span>
+            <time datetime={pubDate}>{pubDate}</time>
+          </span>
+          {modDate && modDate !== pubDate && (
+            <span class="article-meta__item">
+              <span class="article-meta__key">Actualizado</span>
+              <time datetime={modDate}>{modDate}</time>
+            </span>
+          )}
+          <span class="article-meta__item article-meta__item--author">
+            <span class="article-meta__key">Redacción</span>
+            <span>{author}</span>
+          </span>
+        </div>
+      </header>
 
-      <div class="article-meta">
-        <span>Publicado: <time datetime={pubDate}>{pubDate}</time></span>
-        {modDate && modDate !== pubDate && (
-          <span>Actualizado: <time datetime={modDate}>{modDate}</time></span>
-        )}
-        <span>Por {author}</span>
+      <div class="toc-mobile-wrap">
+        <TableOfContents headings={headings} variant="collapsible" />
       </div>
 
-      <div class="disclaimer-box">
-        Este artículo tiene carácter informativo y no constituye asesoramiento fiscal, legal ni financiero personalizado. Consulta con un profesional antes de tomar decisiones que afecten a tu situación particular.
+      <div class="disclaimer-box" role="note">
+        <strong class="disclaimer-box__title">Información orientativa</strong>
+        <p class="disclaimer-box__text">
+          Este artículo no constituye asesoramiento fiscal, legal ni financiero personalizado. Consulta con un profesional antes de tomar decisiones que afecten a tu situación particular.
+        </p>
       </div>
 
-      <div class="article-content">
-        <slot />
-      </div>
+      <article class="article-reading">
+        <div class="article-content">
+          <slot />
+        </div>
+      </article>
 
       <!-- AD_SLOT: in-content (se inserta automáticamente tras el segundo párrafo) -->
       <div id="in-content-ad-anchor">
@@ -160,9 +202,9 @@ const howtoSchema = schema === 'howto' && howtoHeadings.length > 0 ? {
       {relatedPosts.length > 0 && <RelatedPosts posts={relatedPosts} />}
     </div>
 
-    <aside class="article-sidebar">
+    <aside class="article-sidebar" aria-label="Índice y publicidad">
       <div class="sidebar-sticky">
-        <TableOfContents headings={headings} />
+        <TableOfContents headings={headings} variant="sidebar" />
         <!-- AD_SLOT: sidebar -->
         <AdSlot slot="sidebar" size="sidebar" desktopOnly />
       </div>

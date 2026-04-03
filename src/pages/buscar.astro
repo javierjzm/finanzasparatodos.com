@@ -4,7 +4,8 @@ import Base from '../layouts/Base.astro';
 
 <Base
   title="Buscar artículos | Finanzas Guías"
-  description="Busca artículos sobre IRPF, autónomos, deducciones, inversiones y fiscalidad internacional."
+  description="Busca artículos sobre IRPF, autónomos, deducciones, inversiones, criptomonedas y fiscalidad internacional."
+  noindex={true}
 >
   <section class="search-page">
     <h1 class="section-title">Buscar en el sitio</h1>
@@ -19,13 +20,21 @@ import Base from '../layouts/Base.astro';
         placeholder="Ejemplo: tramos irpf, modelo 130, vivienda habitual"
         autocomplete="off"
       />
+      <button type="submit" class="btn btn-primary">Buscar</button>
     </form>
 
-    <p id="search-result-count" class="search-result-count"></p>
-    <div id="search-results" class="articles-grid"></div>
+    <p id="search-result-count" class="search-result-count" aria-live="polite"></p>
+    <div id="search-results" class="articles-grid" aria-live="polite"></div>
     <p id="search-empty" class="search-empty" style="display:none;">
       No se han encontrado resultados con ese término. Prueba con otra palabra o una variante.
     </p>
+    <div class="search-suggestions">
+      <p>Temas populares:</p>
+      <a href="/irpf/tramos-irpf-2025/">Tramos IRPF 2025</a> ·
+      <a href="/autonomos/modelo-130/">Modelo 130</a> ·
+      <a href="/deducciones/deduccion-vivienda-habitual/">Deducción vivienda habitual</a> ·
+      <a href="/cripto/declarar-criptomonedas-irpf-espana/">Declarar criptomonedas</a>
+    </div>
   </section>
 
   <script is:inline>
@@ -38,14 +47,33 @@ import Base from '../layouts/Base.astro';
       var emptyEl = document.getElementById('search-empty');
       if (!input || !countEl || !resultsEl || !emptyEl) return;
       input.value = q;
+      emptyEl.style.display = 'none';
+      resultsEl.innerHTML = '';
 
       if (!q) {
         countEl.textContent = 'Escribe una búsqueda para ver resultados.';
         return;
       }
 
-      var res = await fetch('/search-index.json');
-      var items = await res.json();
+      if (q.length < 2) {
+        countEl.textContent = 'Escribe al menos 2 caracteres para buscar.';
+        return;
+      }
+
+      countEl.textContent = 'Buscando...';
+
+      var items;
+      try {
+        var res = await fetch('/search-index.json');
+        if (!res.ok) {
+          throw new Error('Respuesta no valida');
+        }
+        items = await res.json();
+      } catch (_err) {
+        countEl.textContent = 'No se pudo cargar el buscador. Intentalo de nuevo en unos segundos.';
+        return;
+      }
+
       var normalized = q.toLowerCase();
       var matches = items.filter(function (item) {
         var haystack = [
@@ -57,26 +85,50 @@ import Base from '../layouts/Base.astro';
         return haystack.includes(normalized);
       });
 
+      matches.sort(function (a, b) {
+        var aTitle = String(a.title || '').toLowerCase().indexOf(normalized);
+        var bTitle = String(b.title || '').toLowerCase().indexOf(normalized);
+        var aScore = aTitle === -1 ? 1 : 0;
+        var bScore = bTitle === -1 ? 1 : 0;
+        return aScore - bScore;
+      });
+
       countEl.textContent = matches.length + ' resultado(s) para "' + q + '".';
       if (!matches.length) {
         emptyEl.style.display = 'block';
         return;
       }
 
-      resultsEl.innerHTML = matches.map(function (item) {
+      var frag = document.createDocumentFragment();
+      matches.forEach(function (item) {
         var date = new Date(item.datePublished).toLocaleDateString('es-ES', {
           day: 'numeric',
           month: 'long',
           year: 'numeric'
         });
-        return (
-          '<a class="article-card" href="' + item.url + '">' +
-            '<h3>' + item.title + '</h3>' +
-            '<p class="card-description">' + item.description + '</p>' +
-            '<span class="card-date">' + date + '</span>' +
-          '</a>'
-        );
-      }).join('');
+
+        var card = document.createElement('a');
+        card.className = 'article-card';
+        card.href = item.url;
+
+        var h3 = document.createElement('h3');
+        h3.textContent = item.title;
+        card.appendChild(h3);
+
+        var desc = document.createElement('p');
+        desc.className = 'card-description';
+        desc.textContent = item.description;
+        card.appendChild(desc);
+
+        var dateEl = document.createElement('span');
+        dateEl.className = 'card-date';
+        dateEl.textContent = date;
+        card.appendChild(dateEl);
+
+        frag.appendChild(card);
+      });
+
+      resultsEl.appendChild(frag);
     })();
   </script>
 </Base>

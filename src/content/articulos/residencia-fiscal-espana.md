@@ -8,7 +8,7 @@ dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["tramos-irpf-2025", "impuesto-plusvalias"]
-schema: "faq"
+schema: "article"
 ---
 
 ## ¿Por qué importa tanto la residencia fiscal?

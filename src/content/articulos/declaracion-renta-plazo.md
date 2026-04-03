@@ -7,7 +7,7 @@ datePublished: 2025-02-15
 dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 relatedPosts: ["tramos-irpf-2025", "como-calcular-irpf"]
-schema: "faq"
+schema: "article"
 ---
 
 ## Campaña de la renta 2024-2025: todas las fechas que necesitas conocer

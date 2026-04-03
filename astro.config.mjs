@@ -18,10 +18,14 @@ export default defineConfig({
         } else if (u.includes('/calculadora-fiscal')) {
           item.priority = 0.9;
           item.changefreq = 'monthly';
-        } else if (/^\/(irpf|autonomos|inversiones|deducciones|fiscalidad-internacional)\/$/.test(u)) {
+        } else if (
+          /^\/(irpf|autonomos|inversiones|cripto|deducciones|fiscalidad-internacional)\/$/.test(u)
+        ) {
           item.priority = 0.8;
           item.changefreq = 'weekly';
-        } else if (/^\/(irpf|autonomos|inversiones|deducciones|fiscalidad-internacional)\/[^/]+\/$/.test(u)) {
+        } else if (
+          /^\/(irpf|autonomos|inversiones|cripto|deducciones|fiscalidad-internacional)\/[^/]+\/$/.test(u)
+        ) {
           item.priority = 0.7;
           item.changefreq = 'weekly';
         } else if (['/buscar/', '/contacto/', '/sobre-nosotros/'].includes(u)) {

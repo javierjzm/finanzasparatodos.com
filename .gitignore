@@ -1,0 +1,16 @@
+# Dependencias y salida de build
+node_modules/
+dist/
+
+# Caché de Astro
+.astro/
+
+# Entorno local
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.log

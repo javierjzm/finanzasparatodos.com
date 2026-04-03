@@ -8,7 +8,7 @@ dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["tramos-irpf-2025", "como-calcular-irpf"]
-schema: "faq"
+schema: "article"
 ---
 
 La deducción por inversión en vivienda habitual fue, durante décadas, uno de los mayores incentivos fiscales para los contribuyentes españoles. Aunque ya no está disponible para nuevas compras, **cientos de miles de personas siguen beneficiándose de ella** gracias al régimen transitorio. En esta guía te explicamos quién puede aplicarla todavía, cuánto supone de ahorro y cómo declararla correctamente en la renta.

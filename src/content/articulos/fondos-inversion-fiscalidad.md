@@ -20,7 +20,7 @@ relatedPosts:
   - impuesto-plusvalias
   - tramos-irpf-2025
   - impuestos-andorra-guia-completa
-schema: "faq"
+schema: "article"
 ---
 
 Los fondos de inversión tienen en España una de las ventajas fiscales más potentes del sistema tributario: el **diferimiento fiscal en el traspaso**. Puedes cambiar de estrategia, de gestora o de tipo de activo cuantas veces quieras sin pagar un solo euro a Hacienda, siempre que el dinero no salga del circuito de fondos. Esta guía explica en detalle cómo tributan los fondos de inversión, cuándo sí pagas impuestos, qué diferencia hay con los ETFs y cómo aprovechar al máximo las ventajas fiscales disponibles en 2026.

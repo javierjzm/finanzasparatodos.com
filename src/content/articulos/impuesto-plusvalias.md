@@ -13,7 +13,7 @@ keywords:
   - plusvalias fondos inversion
   - plusvalias criptomonedas irpf
 datePublished: 2025-02-05
-dateModified: 2026-03-30
+dateModified: 2026-04-03
 faqs:
   - q: "¿Qué tipo impositivo se aplica a las plusvalías en España en 2026?"
     a: "Las ganancias patrimoniales tributan en la base del ahorro del IRPF con tipos progresivos: 19 % hasta 6.000 €; 21 % de 6.000 € a 50.000 €; 23 % de 50.000 € a 200.000 €; 27 % de 200.000 € a 300.000 €; y 28 % a partir de 300.000 €."
@@ -22,18 +22,18 @@ faqs:
   - q: "¿Cuánto tiempo hay que tener un activo para que la plusvalía sea a largo plazo?"
     a: "En España no existe una distinción fiscal entre plusvalías a corto y largo plazo. Todas las ganancias derivadas de la transmisión de elementos patrimoniales —independientemente del período de tenencia— tributan en la base del ahorro a los mismos tipos progresivos."
   - q: "¿Cómo tributan las criptomonedas en España?"
-    a: "Las ganancias por venta de criptomonedas se consideran ganancias patrimoniales y tributan en la base del ahorro del IRPF a los mismos tipos que las acciones (19-28 %). Desde 2023 existe también obligación de informar de los saldos en criptomonedas mediante el Modelo 721."
+    a: "Las ganancias por venta de criptomonedas se consideran ganancias patrimoniales y tributan en la base del ahorro del IRPF a los mismos tipos que las acciones (19-28 %). Puede existir obligación informativa del modelo 721 para monedas virtuales custodiadas en el extranjero. En el sitio tienes una guía dedicada en la sección Criptomonedas."
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["fondos-inversion-fiscalidad", "tramos-irpf-2025"]
-schema: "faq"
+schema: "article"
 ---
 
 ## ¿Qué son las ganancias patrimoniales?
 
 En el sistema tributario español, las **ganancias patrimoniales** son las variaciones positivas en el valor del patrimonio de un contribuyente que se ponen de manifiesto con ocasión de una alteración en su composición. Dicho de forma más sencilla: cuando vendes un activo por más dinero del que pagaste por él, la diferencia constituye una ganancia patrimonial, también conocida coloquialmente como **plusvalía**.
 
-El artículo 33 de la Ley del IRPF (Ley 35/2006) las define como «las variaciones en el valor del patrimonio del contribuyente que se pongan de manifiesto con ocasión de cualquier alteración en la composición de aquél, salvo que por esta Ley se califiquen como rendimientos». Esto abarca un abanico muy amplio de operaciones: desde la venta de acciones o fondos de inversión hasta la transmisión de un inmueble, pasando por la venta de criptomonedas o incluso de objetos de arte.
+El artículo 33 de la Ley del IRPF (Ley 35/2006) las define como «las variaciones en el valor del patrimonio del contribuyente que se pongan de manifiesto con ocasión de cualquier alteración en la composición de aquél, salvo que por esta Ley se califiquen como rendimientos». Esto abarca un abanico muy amplio de operaciones: desde la venta de acciones o fondos de inversión hasta la transmisión de un inmueble, pasando por la venta de criptomonedas o incluso de objetos de arte. Si te interesa el detalle sobre declaración en el IRPF, modelo 721, swaps y stablecoins, consulta la guía [cómo declarar criptomonedas en España](/cripto/declarar-criptomonedas-irpf-espana/).
 
 Es importante distinguir entre **ganancias patrimoniales** y **rendimientos del capital mobiliario**. Aunque ambos conceptos tributan dentro de la base del ahorro del IRPF, las ganancias patrimoniales se generan por la transmisión de un elemento patrimonial, mientras que los rendimientos del capital mobiliario incluyen intereses, dividendos y cupones de renta fija.
 
@@ -178,4 +178,4 @@ Las pérdidas patrimoniales que no hayas podido compensar en el ejercicio en que
 
 ### ¿Tributan igual las criptomonedas que las acciones?
 
-Sí, desde el punto de vista del IRPF tributan de la misma manera. Las ganancias obtenidas por la venta o permuta de criptomonedas se integran en la base del ahorro y se les aplican los mismos tramos progresivos (del 19 % al 28 %). La principal diferencia práctica radica en las **obligaciones informativas**: si posees criptomonedas en exchanges situados en el extranjero cuyo valor supere los 50.000 €, deberás presentar el **modelo 721** antes del 31 de marzo del ejercicio siguiente. Además, los exchanges residentes en España informan automáticamente a la AEAT mediante los modelos 172 y 173.
+Sí, desde el punto de vista del IRPF tributan de la misma manera. Las ganancias obtenidas por la venta o permuta de criptomonedas se integran en la base del ahorro y se les aplican los mismos tramos progresivos (del 19 % al 28 %). La principal diferencia práctica radica en las **obligaciones informativas**: si posees criptomonedas en exchanges situados en el extranjero cuyo valor supere los 50.000 €, deberás presentar el **modelo 721** antes del 31 de marzo del ejercicio siguiente. Además, los exchanges residentes en España informan automáticamente a la AEAT mediante los modelos 172 y 173. Para una guía paso a paso sobre declaración, swaps y plazos, consulta [cómo declarar criptomonedas en España](/cripto/declarar-criptomonedas-irpf-espana/).

@@ -9,6 +9,7 @@ const articulos = defineCollection({
       'irpf',
       'autonomos',
       'inversiones',
+      'cripto',
       'deducciones',
       'fiscalidad-internacional',
     ]),
@@ -21,6 +22,7 @@ const articulos = defineCollection({
     adSlots: z.boolean().default(true),
     pillar: z.boolean().default(false),
     relatedPosts: z.array(z.string()).default([]),
+    /** `article`: evita doble registro en el glob-loader de Astro con `faq`. El FAQ en JSON-LD usa `faqs` en el frontmatter. */
     schema: z.enum(['article', 'faq', 'howto']).default('article'),
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),

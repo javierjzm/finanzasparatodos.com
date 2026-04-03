@@ -18,7 +18,7 @@ relatedPosts:
   - residencia-fiscal-espana
   - tramos-irpf-2025
   - fondos-inversion-fiscalidad
-schema: "faq"
+schema: "article"
 ---
 
 Andorra se ha convertido en uno de los destinos fiscales más atractivos para profesionales, autónomos e inversores españoles. Con un **IRPF máximo del 10 %**, sin impuesto de patrimonio y con un IVA del 4,5 %, el Principado ofrece una presión fiscal muy inferior a la española.

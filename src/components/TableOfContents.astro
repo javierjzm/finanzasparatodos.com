@@ -7,15 +7,19 @@ interface Heading {
 
 interface Props {
   headings: Heading[];
+  /** `collapsible`: bloque desplegable para móvil; `sidebar`: caja lateral escritorio */
+  variant?: 'sidebar' | 'collapsible';
 }
 
-const { headings } = Astro.props;
+const { headings, variant = 'sidebar' } = Astro.props;
 const tocItems = headings.filter((h) => h.depth === 2);
+const aria =
+  variant === 'collapsible' ? 'Índice de la guía (versión móvil)' : 'Índice de contenidos';
 ---
 
-{tocItems.length > 0 && (
-  <nav class="toc" aria-label="Índice de contenidos">
-    <h2 class="toc-title">Índice</h2>
+{tocItems.length > 0 && variant === 'sidebar' && (
+  <nav class="toc toc--sidebar" aria-label={aria}>
+    <h2 class="toc-title">En esta guía</h2>
     <ol class="toc-list">
       {tocItems.map((heading) => (
         <li>
@@ -28,9 +32,31 @@ const tocItems = headings.filter((h) => h.depth === 2);
   </nav>
 )}
 
+{tocItems.length > 0 && variant === 'collapsible' && (
+  <details class="toc toc--collapsible">
+    <summary class="toc-summary">
+      <span class="toc-summary__main">
+        <span class="toc-summary__label">En esta guía</span>
+        <span class="toc-summary__hint">{tocItems.length} apartados</span>
+      </span>
+    </summary>
+    <nav class="toc-collapsible-body" aria-label={aria}>
+      <ol class="toc-list">
+        {tocItems.map((heading) => (
+          <li>
+            <a href={`#${heading.slug}`} class="toc-link">
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  </details>
+)}
+
 <script>
   const links = document.querySelectorAll('.toc-link');
-  const headings = document.querySelectorAll('article h2[id]');
+  const headings = document.querySelectorAll('.article-reading h2[id]');
 
   if (headings.length > 0 && links.length > 0) {
     const observer = new IntersectionObserver(
@@ -39,12 +65,17 @@ const tocItems = headings.filter((h) => h.depth === 2);
           if (entry.isIntersecting) {
             links.forEach((l) => l.classList.remove('active'));
             const id = entry.target.getAttribute('id');
-            const active = document.querySelector(`.toc-link[href="#${id}"]`);
+            if (!id) return;
+            const safe =
+              typeof CSS !== 'undefined' && typeof CSS.escape === 'function'
+                ? CSS.escape(id)
+                : id;
+            const active = document.querySelector(`.toc-link[href="#${safe}"]`);
             if (active) active.classList.add('active');
           }
         });
       },
-      { rootMargin: '-80px 0px -60% 0px', threshold: 0 }
+      { rootMargin: '-90px 0px -58% 0px', threshold: 0 }
     );
 
     headings.forEach((h) => observer.observe(h));

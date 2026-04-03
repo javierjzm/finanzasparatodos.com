@@ -25,7 +25,7 @@ faqs:
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["como-calcular-irpf", "declaracion-renta-plazo"]
-schema: "faq"
+schema: "article"
 ---
 
 ## ¿Qué son los tramos del IRPF?

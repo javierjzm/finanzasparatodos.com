@@ -27,11 +27,13 @@ const breadcrumbItems = [
 ---
 
 <Base title={`${categoryName} | Finanzas Guías`} description={metaDescription}>
-  <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+  <div class="container category-page">
     <Breadcrumb items={breadcrumbItems} />
 
-    <h1 class="section-title">{categoryName}</h1>
-    <p class="section-subtitle" set:html={description} />
+    <header class="category-header">
+      <h1 class="section-title category-header__title">{categoryName}</h1>
+      <p class="category-lead" set:html={description} />
+    </header>
 
     <div class="articles-grid">
       {articles.map((article, index) => (

@@ -8,7 +8,7 @@ dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["gastos-deducibles-autonomos", "modelo-130"]
-schema: "faq"
+schema: "article"
 ---
 
 Desde enero de 2023, los trabajadores autónomos en España cotizan a la Seguridad Social en función de sus **ingresos reales**. Este sistema progresivo sustituye al antiguo modelo de base libre y se implanta de forma gradual entre 2023 y 2025. En este artículo te presentamos la **tabla completa de cuotas de autónomos para 2025**, explicamos cómo funciona cada tramo y resolvemos las dudas más frecuentes.

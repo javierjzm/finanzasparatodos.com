@@ -13,7 +13,7 @@ export async function GET(context: APIContext) {
   return rss({
     title: 'Finanzas Guías',
     description:
-      'Guías claras y actualizadas sobre IRPF, fiscalidad para autónomos, inversiones y deducciones fiscales en España.',
+      'Guías fiscales claras sobre IRPF, autónomos, inversiones, criptomonedas, deducciones y fiscalidad internacional en España.',
     site: context.site!.toString(),
     items: sortedArticles.map((article) => ({
       title: article.data.title,

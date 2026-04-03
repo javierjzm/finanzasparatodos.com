@@ -20,7 +20,7 @@ dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
 relatedPosts: ["fondos-inversion-fiscalidad", "impuesto-plusvalias", "tramos-irpf-2025"]
-schema: "faq"
+schema: "article"
 ---
 
 España ofrece un abanico amplio de productos de inversión regulados para particulares: desde depósitos bancarios y fondos de inversión hasta planes de pensiones, ETFs y brókeres digitales. La **fiscalidad** de cada opción depende del tipo de renta —intereses, dividendos o ganancias patrimoniales— y en la mayoría de los casos se integra en la **base del ahorro del IRPF**. Esta guía resume las principales opciones, cómo tributan y qué factores hay que tener en cuenta para elegir.
