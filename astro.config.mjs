@@ -1,10 +1,13 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
+import cloudflare from "@astrojs/cloudflare";
+
 export default defineConfig({
   site: 'https://finanzasguias.com',
   trailingSlash: 'always',
   output: 'static',
+
   integrations: [
     sitemap({
       filter: (page) =>
@@ -43,9 +46,12 @@ export default defineConfig({
       },
     }),
   ],
+
   build: {
     assets: 'assets',
     inlineStylesheets: 'auto',
   },
+
   compressHTML: true,
+  adapter: cloudflare()
 });
