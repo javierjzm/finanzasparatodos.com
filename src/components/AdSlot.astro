@@ -1,4 +1,10 @@
 ---
+/**
+ * Marcadores de posición para anuncios. Con **anuncios automáticos** de AdSense activados
+ * en el panel, Google inserta los creativos sin `data-ad-slot` ni `.env`: basta el script
+ * del cliente en `Base.astro`. Estos bloques reservan espacio (min-height) y orden visual;
+ * si Auto ads coloca anuncios en otras zonas, puedes ir eliminando `AdSlot` donde sobren.
+ */
 interface Props {
   slot: string;
   size: 'banner' | 'rectangle' | 'sidebar' | 'anchor';
@@ -23,11 +29,5 @@ const classes = [
 ].filter(Boolean).join(' ');
 ---
 
-<!-- AD_SLOT: {slot} -->
-<div
-  class={classes}
-  data-ad-slot={slot}
-  aria-hidden="true"
-  role="none"
->
-</div>
+<!-- Zona publicitaria (Auto ads): {slot} -->
+<div class={classes} data-ad-slot={slot} aria-hidden="true" role="presentation"></div>

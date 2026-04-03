@@ -2,6 +2,8 @@
 title: "Cómo invertir en España 2026: guía de opciones para particulares"
 description: "Depósitos, fondos, ETFs, planes de pensiones y brókeres online en España: opciones, fiscalidad en el IRPF y cómo elegir según tu perfil. 2026."
 category: "inversiones"
+coverImage: "/images/covers/articles/opciones-inversion-particular-espana.jpg"
+imageAlt: "Persona revisando datos financieros en portátil"
 keywords:
   - como invertir en españa
   - opciones inversion particulares españa

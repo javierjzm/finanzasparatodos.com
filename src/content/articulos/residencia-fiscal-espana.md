@@ -1,15 +1,49 @@
 ---
-title: "Cuándo eres residente fiscal en España y qué significa para tus impuestos"
-description: "Residencia fiscal en España: regla de 183 días, núcleo de intereses económicos, rentas mundiales y convenios de doble imposición."
+title: "Residencia fiscal en España: cuándo eres residente y qué impuestos pagas"
+description: "Qué es la residencia fiscal en España, cuándo se aplica la regla de los 183 días, cómo cambiar la residencia fiscal y qué impuestos tributan como residente."
 category: "fiscalidad-internacional"
-keywords: ["residencia fiscal españa", "183 dias residencia fiscal", "doble imposicion españa", "tributacion no residente", "convenio doble imposicion"]
+coverImage: "/images/covers/articles/residencia-fiscal-espana.jpg"
+imageAlt: "Mapa y cuaderno de viaje, planificación y residencia"
+keywords:
+  - residencia fiscal
+  - residencia fiscal españa
+  - residente fiscal españa
+  - que es la residencia fiscal
+  - cuantos dias para ser residente fiscal en españa
+  - 183 dias residencia fiscal
+  - como cambiar residencia fiscal
+  - residencia fiscal requisitos
+  - doble imposicion españa
+  - tributacion no residente
+  - convenio doble imposicion
+  - dejar de ser residente fiscal en españa
 datePublished: 2025-03-01
-dateModified: 2026-03-30
+dateModified: 2026-04-03
 author: "Equipo editorial de Finanzas Guías"
 pillar: true
-relatedPosts: ["tramos-irpf-2025", "impuesto-plusvalias"]
-schema: "article"
+relatedPosts: ["tramos-irpf-2025", "impuesto-plusvalias", "impuestos-andorra-guia-completa"]
+schema: "faq"
+faqs:
+  - q: "¿Qué es la residencia fiscal en España?"
+    a: "La residencia fiscal determina dónde tributa una persona por sus rentas. Si eres residente fiscal en España, pagas el IRPF por tus rentas mundiales (ingresos de cualquier país). Si no lo eres, solo tributan en España las rentas de fuente española, a través del Impuesto sobre la Renta de No Residentes (IRNR)."
+  - q: "¿Cuántos días hay que estar en España para ser residente fiscal?"
+    a: "La Ley del IRPF establece que eres residente fiscal si permaneces más de 183 días en España a lo largo del año natural. Pero también puedes ser residente aunque no llegues a 183 días si el núcleo principal de tus intereses económicos o tu familia (cónyuge e hijos menores) están en España."
+  - q: "¿Cómo dejo de ser residente fiscal en España?"
+    a: "Debes trasladar tu residencia a otro país y cumplir de forma efectiva los criterios de residencia allí: superar los 183 días, tener el centro de intereses económicos en ese país y, si tienes familia, que también resida allí. Hacienda puede considerar ficticio el cambio si mantienes tu actividad, activos o familia en España. Se recomienda obtener un certificado de residencia fiscal del nuevo país."
+  - q: "¿Qué pasa si eres residente fiscal en dos países a la vez?"
+    a: "Si dos países te consideran residente simultáneamente, el convenio de doble imposición entre ambos aplica reglas de desempate: primero se mira la vivienda permanente, luego el centro de intereses vitales, después la morada habitual y, por último, la nacionalidad."
+  - q: "¿Un residente fiscal en España paga impuestos por sus ingresos en el extranjero?"
+    a: "Sí. Los residentes fiscales en España tributan por renta mundial: salarios, dividendos, alquileres, plusvalías y cualquier ingreso, independientemente del país donde se obtenga. Los convenios de doble imposición evitan pagar dos veces por la misma renta."
 ---
+
+## ¿Qué es la residencia fiscal en España?
+
+La residencia fiscal es el concepto jurídico que determina **en qué país tributa una persona por sus ingresos**. Ser residente fiscal en España no es lo mismo que tener el DNI español ni estar empadronado: lo que cuenta es el cumplimiento de los criterios legales establecidos en el artículo 9 de la Ley 35/2006 del IRPF.
+
+Si eres **residente fiscal en España** → tributas por tu **renta mundial** (todos tus ingresos, de cualquier país) en el IRPF.  
+Si **no** eres residente fiscal en España → solo tributas en España por las rentas con origen en territorio español, a través del Impuesto sobre la Renta de No Residentes (IRNR).
+
+La diferencia puede suponer miles de euros al año en impuestos, por lo que entender cuándo eres residente fiscal y qué consecuencias tiene es el primer paso de cualquier planificación fiscal.
 
 ## ¿Por qué importa tanto la residencia fiscal?
 

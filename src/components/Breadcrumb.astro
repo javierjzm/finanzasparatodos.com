@@ -1,4 +1,6 @@
 ---
+import { absoluteUrl } from '../config/site';
+
 interface BreadcrumbItem {
   label: string;
   href: string;
@@ -17,9 +19,7 @@ const jsonLd = {
     '@type': 'ListItem',
     position: index + 1,
     name: item.label,
-    item: item.href.startsWith('http')
-      ? item.href
-      : `https://finanzasguias.com${item.href}`,
+    item: item.href.startsWith('http') ? item.href : absoluteUrl(item.href),
   })),
 };
 ---

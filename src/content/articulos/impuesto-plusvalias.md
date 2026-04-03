@@ -2,6 +2,8 @@
 title: "Impuesto sobre las plusvalías en España 2025: tipos y cómo tributar las ganancias"
 description: "Cómo tributan las plusvalías en España en 2025: tipos impositivos de la base del ahorro, compensación de pérdidas, ejemplos prácticos y preguntas frecuentes."
 category: "inversiones"
+coverImage: "/images/covers/articles/impuesto-plusvalias.jpg"
+imageAlt: "Gráficos y análisis de mercado en pantalla"
 keywords:
   - impuesto plusvalias
   - plusvalias acciones

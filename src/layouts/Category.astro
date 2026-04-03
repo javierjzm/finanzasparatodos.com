@@ -2,12 +2,15 @@
 import Base from './Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import AdSlot from '../components/AdSlot.astro';
+import { absoluteUrl } from '../config/site';
 
 interface ArticleCard {
   title: string;
   description: string;
   href: string;
   date: string;
+  coverSrc: string;
+  imageAlt: string;
 }
 
 interface Props {
@@ -24,6 +27,20 @@ const breadcrumbItems = [
   { label: 'Inicio', href: '/' },
   { label: categoryName, href: `/${categorySlug}/` },
 ];
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: categoryName,
+  description: metaDescription,
+  numberOfItems: articles.length,
+  itemListElement: articles.map((a, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: a.title,
+    url: absoluteUrl(a.href),
+  })),
+};
 ---
 
 <Base title={`${categoryName} | Finanzas Guías`} description={metaDescription}>
@@ -39,13 +56,26 @@ const breadcrumbItems = [
       {articles.map((article, index) => (
         <>
           <a href={article.href} class="article-card">
-            <h3>{article.title}</h3>
-            <p class="card-description">{article.description}</p>
-            <span class="card-date">{article.date}</span>
+            <div class="article-card__media">
+              <img
+                src={article.coverSrc}
+                alt={article.imageAlt}
+                width="248"
+                height="186"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="article-card__body">
+              <h3>{article.title}</h3>
+              <p class="card-description">{article.description}</p>
+              <span class="card-date">{article.date}</span>
+            </div>
           </a>
           {index === 3 && <AdSlot slot={`category-${categorySlug}`} size="rectangle" />}
         </>
       ))}
     </div>
   </div>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
 </Base>

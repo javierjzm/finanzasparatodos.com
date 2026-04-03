@@ -1,14 +1,50 @@
 ---
-title: "Plazos de la declaración de la renta 2025: cuándo empieza y cuándo termina"
-description: "Fechas clave de la declaración de la renta 2024-2025: inicio, cita previa, domiciliación del pago y consecuencias del retraso."
+title: "Plazos de la declaración de la renta 2025: fecha límite, inicio y calendario completo"
+description: "Fechas clave de la declaración de la renta 2024-2025: plazo IRPF, fecha límite del 30 de junio, cita previa, domiciliación y consecuencias del retraso."
 category: "irpf"
-keywords: ["declaracion renta 2025 plazo", "cuando empieza la renta 2025", "fecha declaracion renta", "plazo renta 2025", "cita previa renta"]
+coverImage: "/images/covers/articles/declaracion-renta-plazo.jpg"
+imageAlt: "Reloj de pared, metáfora de plazos y calendario fiscal"
+keywords:
+  - plazo declaracion de la renta
+  - plazos renta 2025
+  - plazo irpf 2025
+  - fecha limite declaracion renta
+  - plazos de la declaracion de la renta 2024
+  - cuando empieza la renta 2025
+  - fecha declaracion renta 2025
+  - plazo renta 2025
+  - cita previa renta
+  - cuando termina el plazo de la renta
 datePublished: 2025-02-15
 dateModified: 2026-03-30
 author: "Equipo editorial de Finanzas Guías"
 relatedPosts: ["tramos-irpf-2025", "como-calcular-irpf"]
-schema: "article"
+schema: "faq"
+faqs:
+  - q: "¿Cuándo empieza el plazo de la declaración de la renta 2025?"
+    a: "El plazo de la renta 2024-2025 comienza el 2 de abril de 2025 para la presentación por internet (Renta Web). El servicio «Le Llamamos» por teléfono arranca el 6 de mayo y la atención presencial el 2 de junio."
+  - q: "¿Cuál es la fecha límite para presentar la declaración de la renta?"
+    a: "La fecha límite es el 30 de junio de 2025. Si la declaración sale a ingresar y quieres domiciliar el pago, el plazo se adelanta al 25 de junio."
+  - q: "¿Qué pasa si presento la declaración fuera de plazo?"
+    a: "Sin requerimiento previo, se aplica un recargo de 1 % por mes completo de retraso (hasta 12 % al año). Pasado el año, el recargo sube al 15 % más intereses de demora. Si Hacienda te requiere antes de que presentes, las sanciones van del 50 % al 150 % de la cuota no ingresada."
+  - q: "¿Cuándo es el plazo IRPF si me sale a devolver?"
+    a: "El plazo es el mismo: 30 de junio de 2025. Si tienes derecho a devolución, no hay obligación de domiciliar, pero sí conviene presentar antes del 30 de junio para que Hacienda procese antes la devolución. El derecho a solicitar la devolución prescribe a los 4 años."
+  - q: "¿Puedo pagar la renta en dos plazos?"
+    a: "Sí. Puedes fraccionar el pago en dos plazos sin intereses: 60 % al presentar la declaración (o el 30 de junio si domicilias) y 40 % el 5 de noviembre de 2025. Solo tienes que marcar la opción al presentar."
+  - q: "¿Cómo pido cita previa para la declaración de la renta?"
+    a: "Puedes pedir cita en sede.agenciatributaria.gob.es, con la app oficial de la Agencia Tributaria, o llamando al 91 535 73 26 / 901 12 12 24. Necesitas tu NIF y, según el canal, tu primer apellido o número de referencia."
 ---
+
+## Plazos de la renta 2024-2025: resumen rápido
+
+| Hito | Fecha |
+|------|-------|
+| Inicio presentación online (Renta Web) | **2 de abril de 2025** |
+| Inicio servicio telefónico «Le Llamamos» | 6 de mayo de 2025 |
+| Inicio atención presencial en oficinas | 2 de junio de 2025 |
+| Último día para domiciliar el pago | **25 de junio de 2025** |
+| **Fecha límite para presentar la declaración** | **30 de junio de 2025** |
+| Segundo plazo (40 % fraccionado) | 5 de noviembre de 2025 |
 
 ## Campaña de la renta 2024-2025: todas las fechas que necesitas conocer
 

@@ -2,6 +2,8 @@
 title: "Fiscalidad de los fondos de inversión en España 2026"
 description: "Cómo tributan los fondos de inversión en España: ventaja del traspaso sin tributar, reembolso, diferencia fiscal con ETFs y ejemplos de ahorro real."
 category: "inversiones"
+coverImage: "/images/covers/articles/fondos-inversion-fiscalidad.png"
+imageAlt: "Ilustración sobre fondos de inversión y fiscalidad"
 keywords:
   - fiscalidad fondos inversion
   - traspaso fondos sin tributar

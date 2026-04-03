@@ -2,6 +2,8 @@
 title: "Tramos del IRPF 2025: tabla actualizada y cómo calcular lo que pagas"
 description: "Consulta los tramos del IRPF 2025 actualizados, con tabla estatal, comparativa autonómica y ejemplos de cuánto se paga con salarios de 30.000 a 120.000 €."
 category: "irpf"
+coverImage: "/images/covers/articles/tramos-irpf-2025.jpg"
+imageAlt: "Monedas y efectivo, referencia a impuestos y tramos"
 keywords:
   - tramos irpf 2025
   - tabla irpf 2025

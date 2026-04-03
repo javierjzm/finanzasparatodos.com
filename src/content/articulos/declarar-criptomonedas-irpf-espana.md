@@ -2,6 +2,8 @@
 title: "Cómo declarar criptomonedas en España en 2026: IRPF, modelo 721 y plusvalías"
 description: "Cómo declarar criptomonedas en España 2026: IRPF, modelo 721, plusvalías por venta o intercambio y plazos AEAT. Guía práctica para residentes."
 category: "cripto"
+coverImage: "/images/covers/articles/declarar-criptomonedas-irpf-espana.jpg"
+imageAlt: "Moneda física de Bitcoin sobre fondo digital"
 keywords:
   - declarar criptomonedas españa
   - fiscalidad criptomonedas irpf

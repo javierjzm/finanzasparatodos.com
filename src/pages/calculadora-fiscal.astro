@@ -70,12 +70,23 @@ const webAppSchema = {
 };
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} ogImage="/images/calculadora-hero.jpg">
   <div class="container">
     <Breadcrumb items={breadcrumbs} />
   </div>
 
   <section class="calc-hero">
+    <div class="calc-hero-banner">
+      <img
+        src="/images/calculadora-hero.jpg"
+        alt="Calculadora y documentos: comparador fiscal España frente a otros países"
+        width="1200"
+        height="500"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </div>
     <h1>Comparador de impuestos: España vs tu país 2026</h1>
     <p>¿Cuánto pagarías de IRPF y cotizaciones si vivieras en España? Compara con Francia, Alemania, Italia, Portugal, Reino Unido, Rusia o Andorra. Introduce tu salario y obtén el resultado al instante.</p>
   </section>

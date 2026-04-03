@@ -1,6 +1,7 @@
 ---
 import Category from '../../layouts/Category.astro';
 import { getCollection } from 'astro:content';
+import { resolveArticleCover } from '../../utils/covers';
 
 const allArticles = await getCollection('articulos');
 const articles = allArticles
@@ -15,6 +16,8 @@ const articles = allArticles
       month: 'long',
       year: 'numeric',
     }),
+    coverSrc: resolveArticleCover('irpf', a.data.coverImage),
+    imageAlt: a.data.imageAlt ?? a.data.title,
   }));
 
 const description = `El Impuesto sobre la Renta de las Personas Físicas (IRPF) es el tributo más importante para la mayoría de contribuyentes en España. Afecta a los rendimientos del trabajo, las actividades económicas, las rentas del capital y las ganancias patrimoniales. Conocer cómo funciona —sus tramos, deducciones, plazos y particularidades autonómicas— es esencial para optimizar tu declaración y evitar errores que pueden costarte dinero. En esta sección encontrarás guías detalladas, tablas actualizadas y ejemplos prácticos que te ayudarán a entender cada aspecto del IRPF, desde el cálculo de la base imponible hasta las opciones de tributación conjunta o individual.`;

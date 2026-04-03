@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
+import { resolveArticleCover } from '../utils/covers';
 
 export const prerender = true;
 
@@ -15,6 +16,8 @@ export const GET: APIRoute = async () => {
       slug: article.slug,
       url: `/${article.data.category}/${article.slug}/`,
       datePublished: article.data.datePublished.toISOString(),
+      coverUrl: resolveArticleCover(article.data.category, article.data.coverImage),
+      imageAlt: article.data.imageAlt ?? article.data.title,
     }));
 
   return new Response(JSON.stringify(payload), {

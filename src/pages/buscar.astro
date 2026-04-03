@@ -111,19 +111,36 @@ import Base from '../layouts/Base.astro';
         card.className = 'article-card';
         card.href = item.url;
 
+        var media = document.createElement('div');
+        media.className = 'article-card__media';
+        var img = document.createElement('img');
+        img.src = item.coverUrl || '';
+        img.alt = item.imageAlt || '';
+        img.width = 640;
+        img.height = 360;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        media.appendChild(img);
+        card.appendChild(media);
+
+        var body = document.createElement('div');
+        body.className = 'article-card__body';
+
         var h3 = document.createElement('h3');
         h3.textContent = item.title;
-        card.appendChild(h3);
+        body.appendChild(h3);
 
         var desc = document.createElement('p');
         desc.className = 'card-description';
         desc.textContent = item.description;
-        card.appendChild(desc);
+        body.appendChild(desc);
 
         var dateEl = document.createElement('span');
         dateEl.className = 'card-date';
         dateEl.textContent = date;
-        card.appendChild(dateEl);
+        body.appendChild(dateEl);
+
+        card.appendChild(body);
 
         frag.appendChild(card);
       });

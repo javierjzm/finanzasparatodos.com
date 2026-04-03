@@ -2,6 +2,8 @@
 title: "Cuota de autónomos 2025: tabla por ingresos reales"
 description: "Tabla completa de la cuota de autónomos 2025 por tramos de ingresos reales. Conoce cuánto pagarás según tus rendimientos netos y cómo cambiar de tramo."
 category: "autonomos"
+coverImage: "/images/covers/articles/cuota-autonomos-2025.jpg"
+imageAlt: "Espacio de trabajo con ordenador junto a una ventana"
 keywords: ["cuota autonomos 2025", "tabla autonomos ingresos reales", "cotizacion autonomos 2025", "base cotizacion autonomos", "cuanto paga un autonomo"]
 datePublished: 2025-01-25
 dateModified: 2026-03-30

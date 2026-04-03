@@ -1,6 +1,7 @@
 ---
 import Category from '../../layouts/Category.astro';
 import { getCollection } from 'astro:content';
+import { resolveArticleCover } from '../../utils/covers';
 
 const allArticles = await getCollection('articulos');
 const articles = allArticles
@@ -15,6 +16,8 @@ const articles = allArticles
       month: 'long',
       year: 'numeric',
     }),
+    coverSrc: resolveArticleCover('cripto', a.data.coverImage),
+    imageAlt: a.data.imageAlt ?? a.data.title,
   }));
 
 const description = `Las criptomonedas y demás criptoactivos han pasado de ser un nicho tecnológico a un activo que Hacienda mira con lupa: plusvalías en la venta o el intercambio, obligaciones informativas cuando la custodia está en el extranjero y la necesidad de encajar cada operación en el IRPF. En esta sección reunimos guías pensadas para el residente fiscal en España, con referencia a la normativa y a los criterios publicados por la Agencia Tributaria, sin sustituir el asesoramiento personalizado de un gestor o economista colegiado.`;

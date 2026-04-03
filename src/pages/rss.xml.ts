@@ -10,16 +10,18 @@ export async function GET(context: APIContext) {
     .sort((a, b) => b.data.datePublished.getTime() - a.data.datePublished.getTime())
     .slice(0, 20);
 
+  const site = context.site!.href;
+
   return rss({
     title: 'Finanzas Guías',
     description:
       'Guías fiscales claras sobre IRPF, autónomos, inversiones, criptomonedas, deducciones y fiscalidad internacional en España.',
-    site: context.site!.toString(),
+    site,
     items: sortedArticles.map((article) => ({
       title: article.data.title,
       pubDate: article.data.datePublished,
       description: article.data.description,
-      link: `/${article.data.category}/${article.slug}/`,
+      link: new URL(`/${article.data.category}/${article.slug}/`, site).href,
     })),
     customData: '<language>es-ES</language>',
   });

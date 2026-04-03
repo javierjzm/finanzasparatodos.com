@@ -2,6 +2,8 @@
 title: "Modelo 130: qué es, quién debe presentarlo y cómo rellenarlo"
 description: "Guía completa del modelo 130: pago fraccionado del IRPF para autónomos. Quién está obligado, cómo calcularlo, plazos trimestrales y ejemplo práctico."
 category: "autonomos"
+coverImage: "/images/covers/articles/modelo-130.jpg"
+imageAlt: "Documentos y papeleo fiscal sobre un escritorio"
 keywords: ["modelo 130", "pago fraccionado irpf", "modelo 130 autonomos", "como rellenar modelo 130", "plazo modelo 130"]
 datePublished: 2025-02-20
 dateModified: 2026-03-30

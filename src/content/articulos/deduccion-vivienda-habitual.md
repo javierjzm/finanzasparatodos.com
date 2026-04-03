@@ -2,6 +2,8 @@
 title: "Deducción por vivienda habitual: quién puede aplicarla y cuánto"
 description: "Deducción por vivienda habitual: régimen transitorio para compras antes de 2013, requisitos, importe máximo y cómo declararla."
 category: "deducciones"
+coverImage: "/images/covers/articles/deduccion-vivienda-habitual.jpg"
+imageAlt: "Llaves sobre una pequeña casa modelo"
 keywords: ["deduccion vivienda habitual", "deduccion hipoteca renta", "desgravacion vivienda", "deduccion vivienda irpf", "compra vivienda antes 2013"]
 datePublished: 2025-02-10
 dateModified: 2026-03-30

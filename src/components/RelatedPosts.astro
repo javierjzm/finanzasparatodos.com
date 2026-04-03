@@ -3,6 +3,8 @@ interface RelatedPost {
   title: string;
   description: string;
   href: string;
+  coverSrc: string;
+  imageAlt: string;
 }
 
 interface Props {
@@ -18,10 +20,22 @@ const { posts } = Astro.props;
     <div class="related-posts-grid">
       {posts.map((post) => (
         <a href={post.href} class="related-card">
-          <h3>{post.title}</h3>
-          <p>{post.description.length > 100
-            ? post.description.slice(0, 100) + '…'
-            : post.description}</p>
+          <div class="related-card__media">
+            <img
+              src={post.coverSrc}
+              alt={post.imageAlt}
+              width="640"
+              height="360"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="related-card__body">
+            <h3>{post.title}</h3>
+            <p>{post.description.length > 100
+              ? post.description.slice(0, 100) + '…'
+              : post.description}</p>
+          </div>
         </a>
       ))}
     </div>

@@ -2,6 +2,8 @@
 title: "Impuestos en Andorra 2026: guía completa de fiscalidad para españoles"
 description: "Todo sobre impuestos en Andorra: IRPF, CASS, IGI, patrimonio y requisitos de residencia fiscal. Compara la carga tributaria con España."
 category: "fiscalidad-internacional"
+coverImage: "/images/covers/articles/impuestos-andorra-guia-completa.jpg"
+imageAlt: "Paisaje montañoso, asociado a entornos como Andorra"
 keywords:
   - impuestos andorra
   - fiscalidad andorra

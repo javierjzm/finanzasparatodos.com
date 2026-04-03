@@ -1,6 +1,7 @@
 ---
 import Category from '../../layouts/Category.astro';
 import { getCollection } from 'astro:content';
+import { resolveArticleCover } from '../../utils/covers';
 
 const allArticles = await getCollection('articulos');
 const articles = allArticles
@@ -15,6 +16,8 @@ const articles = allArticles
       month: 'long',
       year: 'numeric',
     }),
+    coverSrc: resolveArticleCover('autonomos', a.data.coverImage),
+    imageAlt: a.data.imageAlt ?? a.data.title,
   }));
 
 const description = `Ser autónomo en España implica cumplir con un conjunto específico de obligaciones fiscales y con la Seguridad Social que van más allá del IRPF. Desde la cuota mensual de autónomos —ahora calculada según tus ingresos reales— hasta los modelos trimestrales que debes presentar ante Hacienda, pasando por los gastos que puedes deducirte legalmente de tu actividad. En esta sección cubrimos todo lo que un trabajador por cuenta propia necesita saber: cotización, facturación, IVA, retenciones, modelos 130, 303 y 390, y las novedades normativas que afectan a los autónomos cada ejercicio fiscal.`;

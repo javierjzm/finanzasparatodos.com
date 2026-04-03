@@ -9,7 +9,8 @@ export default defineConfig({
     sitemap({
       filter: (page) =>
         !page.includes('/draft/') &&
-        !page.includes('/404'),
+        !page.includes('/404') &&
+        !page.includes('/buscar/'),
       serialize: (item) => {
         const u = item.url.replace('https://finanzasguias.com', '');
         if (u === '/') {

@@ -40,24 +40,15 @@ El servidor de desarrollo estará disponible en `http://localhost:4321`.
 
 ## Cómo añadir tu código de AdSense
 
-### 1. Script principal de AdSense
+### 1. Script principal (sitio estático)
 
-Abre `src/components/CookieBanner.astro`. En la función `grantConsent()`, el script de AdSense se cargará automáticamente cuando el usuario acepte cookies. Para añadir tu script de AdSense:
+El script del cliente ya está en `src/layouts/Base.astro` dentro del `<head>` (`adsbygoogle.js?client=ca-pub-…`). El banner de cookies actualiza **Consent Mode** para analítica y publicidad; no hace falta `.env` ni build con secretos.
 
-Añade el script de AdSense en `src/layouts/Base.astro`, dentro del `<head>`, justo después del comentario de Schema:
+### 2. Anuncios automáticos
 
-```html
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
-```
+En el panel de AdSense → **Anuncios** → **Por sitio**, activa **anuncios automáticos** (y otros formatos que quieras, p. ej. ancla). Google inserta los creativos sin pegar `<ins>` ni `data-ad-slot` en el HTML.
 
-### 2. Unidades de anuncio
-
-Busca los comentarios `<!-- AD_SLOT: nombre -->` en el código. Cada uno marca una zona donde pegar tu código de unidad de AdSense. Los encontrarás en:
-
-- `src/components/AdSlot.astro` — componente que renderiza todas las zonas
-- Las zonas activas son: `top-banner`, `in-content`, `below-content`, `sidebar`, `anchor-mobile`, `after-hero`, `after-recent-posts`
-
-Para cada zona, crea una unidad de anuncio en tu panel de AdSense y pega el código `<ins class="adsbygoogle" ...>` dentro del `<div>` correspondiente en `AdSlot.astro`.
+Los componentes `AdSlot` son solo **huecos opcionales** con altura mínima; puedes dejarlos o ir quitándolos si prefieres menos contenedores vacíos. Detalle en `ADSENSE.md`.
 
 ## Cómo cambiar el dominio placeholder
 
@@ -65,7 +56,7 @@ El dominio `finanzasguias.com` está configurado en:
 
 - `astro.config.mjs` (propiedad `site`)
 - `src/layouts/Base.astro` (schemas JSON-LD, URLs)
-- `src/components/Breadcrumb.astro` (URLs en JSON-LD)
+- `src/config/site.ts` (`SITE_ORIGIN`, URLs en migas)
 - `public/robots.txt` (URL del sitemap)
 
 Para cambiarlo, ejecuta un find & replace global:

@@ -2,6 +2,8 @@
 title: "Cómo calcular el IRPF paso a paso (con ejemplos 2025)"
 description: "Aprende a calcular el IRPF paso a paso: base imponible, reducciones, mínimo personal, cuota íntegra y deducciones. Ejemplo completo para un salario de 45.000 €."
 category: "irpf"
+coverImage: "/images/covers/articles/como-calcular-irpf.jpg"
+imageAlt: "Manos trabajando con documentos y calculadora"
 keywords:
   - calcular irpf
   - como calcular irpf 2026

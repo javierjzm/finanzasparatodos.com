@@ -25,6 +25,9 @@ const articulos = defineCollection({
     /** `article`: evita doble registro en el glob-loader de Astro con `faq`. El FAQ en JSON-LD usa `faqs` en el frontmatter. */
     schema: z.enum(['article', 'faq', 'howto']).default('article'),
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+    /** Imagen de portada (ruta pública), p. ej. `/images/mi-articulo.webp`. Si no se indica, se usa la ilustración de la categoría. */
+    coverImage: z.string().optional(),
+    imageAlt: z.string().max(180).optional(),
   }),
 });
 
